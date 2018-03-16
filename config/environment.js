@@ -5,7 +5,10 @@ module.exports = function(environment) {
     modulePrefix: 'prio',
     environment,
     rootURL: '/',
-    locationType: 'auto',
+    host: 'https://api.smallrobot.co', //drupal
+    namespace: 'api',
+    locationType: 'router-scroll',
+    historySupportMiddleware: true,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,6 +19,23 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['all'],
+        config: {
+          id: 'UA-',
+          // Use `analytics_debug.js` in development
+          debug: environment === 'test',
+          // Use verbose tracing of GA events
+          trace: environment === 'test',
+          // Ensure development env hits aren't sent to GA
+          sendHitTask: environment !== 'test',
+          // Specify Google Analytics plugins
+          require: ['']
+        }
+      }
+    ],
 
     APP: {
       // Here you can pass flags/options to your application instance
