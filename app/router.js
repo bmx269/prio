@@ -32,9 +32,29 @@ const Router = EmberRouter.extend(RouterScroll, {
 
 Router.map(function() {
   this.route('home', { path: '/' });
+  this.route('about', function() {
+    this.route('our-story');
+    this.route('how-different');
+    this.route('your-team');
+  });
+  this.route('contact');
+  this.route('blog', { path: 'ideas' }, function() {
+    this.route('post', { path: ':article_id' });
+  });
   this.route('loading');
+  // this.route('page', { path: ':slug'});
   this.route('notfound', { path: '/*path' });
 
+  this.route('priority', function() {
+    this.route('video');
+  });
+  this.route('financial-life', function() {
+    this.route('clarity');
+    this.route('confidence');
+    this.route('control');
+  });
+  this.route('investment');
+  this.route('news');
 });
 
 export default Router;

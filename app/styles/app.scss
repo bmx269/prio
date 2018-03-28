@@ -5,16 +5,18 @@
 @import "fontawesome/fa-brands";
 @import "fontawesome/fa-regular";
 @import "fontawesome/fa-solid";
-@import "bootstrap/bootstrap";
+@import "ember-bootstrap/bootstrap";
+//@import "bootstrap/bootstrap";
 
 @import "global/animate";
 @import "global/base";
 @import "global/typography";
 
 @import "components/angled-divider";
-@import "components/hero-splash";
+@import "components/global-header";
 @import "components/main-nav";
 @import "components/footer-nav";
 @import "components/page-section";
+
 
 

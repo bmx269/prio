@@ -1,0 +1,16 @@
+{{#if post}}
+  {{#if post.heroActive}}
+    {{ main-nav class="hero" navColor=page.navColor heroColor=post.heroColor heroOverlay=post.heroOverlay }}
+    {{hero-splash splash=post}}
+  {{else}}
+    {{main-nav}}
+  {{/if}}
+
+  {{#each post.section as |section|}}
+    {{page-section section=section}}
+  {{/each}}
+  {{global-footer}}
+{{else}}
+  {{loading-spinner}}
+{{/if}}
+
