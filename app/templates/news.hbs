@@ -1,4 +1,6 @@
 {{#each page.section as |section|}}
   {{page-section section=section}}
 {{/each}}
-{{outlet}}
+<div class="slideover">
+  {{liquid-outlet enableGrowth=false}}
+</div>

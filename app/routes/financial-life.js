@@ -14,9 +14,9 @@ export default Route.extend({
       //       },
       //     },
       // })
-      //   .then(pages => {
-      //     return pages.get('firstObject');
-      //   }),
+      // .then(pages => {
+      //   return pages.get('firstObject');
+      // }),
     });
   },
 

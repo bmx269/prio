@@ -7,6 +7,5 @@ export default DS.Model.extend({
   status: DS.attr('boolean'),
   slug: DS.attr('string'),
   heroActive: DS.attr('boolean'),
-  navColor: DS.attr('string'),
   section: DS.hasMany('section', { async: true }),
 });

@@ -5,41 +5,90 @@ export default function(){
   //   this.reverse('toRight')
   // );
 
-  const duration = 150;
+  const duration = 500;
 
   this.transition(
-    this.fromRoute([
-      'about.index',
-      'financial-life.index',
-      'investment.index',
-      'priority.index'
+    this.toRoute(
+      'index',
+    ),
+    this.use('toDown', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute('about'),
+    this.toRoute([
+      'financial-life',
+      'investment',
+      'priority',
+      'news',
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
   );
 
-  // this.transition(
-  //   this.fromRoute('about.how-different'),
-  //   this.use('toUp', { duration }),
-  //   this.reverse('toDown')
-  // );
-  // this.transition(
-  //   this.fromRoute('about.our-story'),
-  //   this.use('toUp', { duration }),
-  //   this.reverse('toDown')
-  // );
+  this.transition(
+    this.fromRoute('financial-life'),
+    this.toRoute([
+      'about',
+      'investment',
+      'priority',
+      'news',
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+  this.transition(
+    this.fromRoute('investment'),
+    this.toRoute([
+      'about',
+      'financial-life',
+      'priority',
+      'news',
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
+  this.transition(
+    this.fromRoute('priority'),
+    this.toRoute([
+      'about',
+      'financial-life',
+      'investment',
+      'news',
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
+  this.transition(
+    this.fromRoute('news'),
+    this.toRoute([
+      'about',
+      'financial-life',
+      'investment',
+      'priority',
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
   this.transition(
     this.toRoute([
       'about.your-team',
       'about.our-story',
       'about.how-different',
       'financial-life.management',
-      'financial-life.management.clarity',
-      'financial-life.management.control',
-      'financial-life.management.confidence'
+      'financial-life.clarity',
+      'financial-life.control',
+      'financial-life.confidence'
     ]),
-    this.use('toUp', { duration }),
-    this.reverse('toDown')
+    this.use('toRight', { duration:200 }),
   );
   // this.transition(
   //   this.fromRoute('home'),

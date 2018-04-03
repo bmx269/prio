@@ -10,7 +10,7 @@ export default Route.extend({
         filter:
           {
             'slug':{
-              'value': '/financial-life/management/control'
+              'value': '/financial-life/confidence'
             },
           },
       })

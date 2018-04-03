@@ -31,7 +31,7 @@ const Router = EmberRouter.extend(RouterScroll, {
 });
 
 Router.map(function() {
-  this.route('home', { path: '/' });
+  this.route('index', { path: '/' });
   this.route('about', function() {
     this.route('our-story');
     this.route('how-different');
@@ -44,11 +44,10 @@ Router.map(function() {
     this.route('video');
   });
   this.route('financial-life', function() {
-    this.route('management', function() {
-      this.route('clarity');
-      this.route('confidence');
-      this.route('control');
-    });
+    this.route('management');
+    this.route('clarity');
+    this.route('confidence');
+    this.route('control');
   });
   this.route('investment', function() {
     this.route('management');
