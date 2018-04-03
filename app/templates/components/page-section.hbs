@@ -35,6 +35,19 @@
                     {{/if}}
                   </div>
                 </div>
+              {{else if element.accitem}}
+              {{#bs-accordion as |acc|}}
+              {{#each element.accitem as |accordion|}}
+                  {{#acc.item as |aitem|}}
+                    {{#aitem.title}}
+                      {{accordion.title}}
+                    {{/aitem.title}}
+                    {{#aitem.body}}
+                      {{html-safe accordion.body.value}}
+                    {{/aitem.body}}
+                  {{/acc.item}}
+                  {{/each}}
+              {{/bs-accordion}}
               {{else if element.image }}
                 <div class='image col'>
                   <img src='{{element.image.fullUrl}}' alt='' srcset=''>

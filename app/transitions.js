@@ -15,6 +15,19 @@ export default function(){
   );
 
   this.transition(
+    this.fromRoute('index'),
+    this.toRoute([
+      'financial-life',
+      'investment',
+      'priority',
+      'news',
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
+  this.transition(
     this.fromRoute('about'),
     this.toRoute([
       'financial-life',
@@ -86,7 +99,9 @@ export default function(){
       'financial-life.management',
       'financial-life.clarity',
       'financial-life.control',
-      'financial-life.confidence'
+      'financial-life.confidence',
+      'investment.management',
+      'priority.video'
     ]),
     this.use('toRight', { duration:200 }),
   );

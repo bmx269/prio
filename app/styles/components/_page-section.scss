@@ -577,6 +577,8 @@
   //  }
   //}
 
+
+
 .slideover {
   position: absolute;
   top: 45px;
@@ -585,10 +587,20 @@
   left: 0;
   right: 0;
 
+
+
   .overlay-container {
     background: #fff;
     //height: 100vh;
     margin: 30px;
     padding: 60px;
+  }
+}
+
+.liquid-application {
+  overflow: visible !important;
+
+  > .liquid-child {
+    overflow: visible;
   }
 }
