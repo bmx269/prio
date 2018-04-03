@@ -1,9 +1,7 @@
-  {{global-header page=page}}
+{{#each page.section as |section|}}
+  {{page-section section=section}}
+{{/each}}
+<div class="slideover">
+  {{liquid-outlet enableGrowth=false}}
+</div>
 
-  {{#each page.section as |section|}}
-    {{page-section section=section}}
-  {{/each}}
-
-  {{!contact-form changeset=(changeset contact) }}
-
-  {{global-footer}}

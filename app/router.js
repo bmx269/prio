@@ -35,26 +35,33 @@ Router.map(function() {
   this.route('about', function() {
     this.route('our-story');
     this.route('how-different');
-    this.route('your-team');
+    this.route('your-team', function() {
+      this.route('member',{ path: ':team_id' });
+    });
   });
-  this.route('contact');
-  this.route('blog', { path: 'ideas' }, function() {
-    this.route('post', { path: ':article_id' });
-  });
-  this.route('loading');
-  // this.route('page', { path: ':slug'});
-  this.route('notfound', { path: '/*path' });
-
+  this.route('snapshot', { path: '/snapshot/:snapshot_id' });
   this.route('priority', function() {
     this.route('video');
   });
   this.route('financial-life', function() {
-    this.route('clarity');
-    this.route('confidence');
-    this.route('control');
+    this.route('management', function() {
+      this.route('clarity');
+      this.route('confidence');
+      this.route('control');
+    });
   });
-  this.route('investment');
-  this.route('news');
+  this.route('investment', function() {
+    this.route('management');
+  });
+  this.route('news', function() {
+    this.route('post', { path: ':article_id' });
+    this.route('archive');
+  });
+  this.route('contact');
+
+  this.route('loading');
+  // this.route('page', { path: ':slug'});
+  this.route('notfound', { path: '/*path' });
 });
 
 export default Router;

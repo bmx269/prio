@@ -1,17 +1,52 @@
-// export default function(){
-//   // this.transition(
-//   //   this.toRoute(['*']),
-//   //   this.use('toLeft'),
-//   //   this.reverse('toRight')
-//   // );
-//   // this.transition(
-//   //   this.toRoute(['home','about','consulting','development','support', 'pricing','contact','blog','blog.post','notfound']),
-//   //   this.use('fade', { duration: 500 })
-//   // );
-//   const duration = 1500;
-//   this.transition(
-//     this.use('toLeft', { duration })
-//   );
-// }
+export default function(){
+  // this.transition(
+  //   this.toRoute(['*']),
+  //   this.use('toLeft'),
+  //   this.reverse('toRight')
+  // );
+
+  const duration = 150;
+
+  this.transition(
+    this.fromRoute([
+      'about.index',
+      'financial-life.index',
+      'investment.index',
+      'priority.index'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
+  // this.transition(
+  //   this.fromRoute('about.how-different'),
+  //   this.use('toUp', { duration }),
+  //   this.reverse('toDown')
+  // );
+  // this.transition(
+  //   this.fromRoute('about.our-story'),
+  //   this.use('toUp', { duration }),
+  //   this.reverse('toDown')
+  // );
+  this.transition(
+    this.toRoute([
+      'about.your-team',
+      'about.our-story',
+      'about.how-different',
+      'financial-life.management',
+      'financial-life.management.clarity',
+      'financial-life.management.control',
+      'financial-life.management.confidence'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+  // this.transition(
+  //   this.fromRoute('home'),
+  //   this.toRoute(['about.your-team','about.our-story','about.how-different']),
+  //   this.use('toUp', { duration }),
+  //   this.reverse('toDown')
+  // );
+}
 
 

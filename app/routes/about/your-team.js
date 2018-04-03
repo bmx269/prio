@@ -5,18 +5,18 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      // page: this.store.findRecord('page', 'af5ab178-3835-4eb9-9f8a-a79f7e7268bb'),
-      page: this.store.query('page', {
-        filter:
-          {
-            'slug':{
-              'value': '/about/your-team'
-            },
-          },
-      })
-        .then(pages => {
-          return pages.get('firstObject');
-        }),
+      page: this.store.findRecord('page', '08793282-fe52-4915-ad5a-29a1cb45203d'),
+      // page: this.store.query('page', {
+      //   filter:
+      //     {
+      //       'slug':{
+      //         'value': '/about/your-team'
+      //       },
+      //     },
+      // })
+      //   .then(pages => {
+      //     return pages.get('firstObject');
+      //   }),
     });
   },
 

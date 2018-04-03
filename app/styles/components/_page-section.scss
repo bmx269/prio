@@ -37,7 +37,7 @@
 } //.article.teaser
 
 .page-section .outer {
-  background-color: #fff;
+  //background-color: #fff;
   // position: relative;
 
   &.hero-active {
@@ -579,8 +579,16 @@
 
 .slideover {
   position: absolute;
-  top: 65px;
-  background: #fff;
-  left: 15px;
-  right: 15px;
+  top: 45px;
+  //bottom: 0;
+  //background: #fff;
+  left: 0;
+  right: 0;
+
+  .overlay-container {
+    background: #fff;
+    //height: 100vh;
+    margin: 30px;
+    padding: 60px;
+  }
 }

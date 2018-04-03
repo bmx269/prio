@@ -5,12 +5,12 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      // page: this.store.findRecord('page', 'af5ab178-3835-4eb9-9f8a-a79f7e7268bb'),
+      // page: this.store.findRecord('page', '73a7f06d-769e-474f-8e6d-234a1feb1848'),
       page: this.store.query('page', {
         filter:
           {
             'slug':{
-              'value': '/financial-life/clarity'
+              'value': '/financial-life/management'
             },
           },
       })
