@@ -24,205 +24,208 @@
   }
 } //.article.teaser
 
-.page-section .outer {
+.page-section {
+  background-color: $white;
+  .outer {
 
-  &.hero-active {
+    &.hero-active {
+
+      .overlay {
+        @extend .col-12;
+        @extend .col-sm-6;
+        @extend .col-md-5;
+        @extend .col-lg-5;
+        @extend .col-xl-4;
+        color: $white;
+      }
+
+
+      // &.short {
+      //   .container-fluid .row {
+      //     min-height: 300px;
+
+      //     @include media-breakpoint-up(md) {
+      //       min-height: 320px;
+      //       height: calc(100vh - 37px);
+      //       max-height: 370px;
+      //     }
+
+      //     @include media-breakpoint-up(lg) {
+      //       min-height: 320px;
+      //       height: calc(100vh - 37px);
+      //       max-height: 370px;
+      //     }
+      //   }
+      // }
+
+      &.tall {
+
+        .container-fluid .row {
+          height: calc(100vh;
+          padding-top: 60px;
+
+          @include media-breakpoint-up(md) {
+            min-height: 400px;
+            height: calc(100vh);
+            padding-top: 125px
+          }
+
+          @include media-breakpoint-up(lg) {
+            min-height: 450px;
+            height: calc(100vh);
+            padding-top: 125px;
+          }
+        }
+
+        .section-column {
+          display: flex;
+        }
+      }
+    }
+
 
     .overlay {
-      @extend .col-12;
-      @extend .col-sm-6;
-      @extend .col-md-5;
-      @extend .col-lg-5;
-      @extend .col-xl-4;
-      color: $white;
-    }
+      background-color: transparent;
+      position: relative;
 
-
-    // &.short {
-    //   .container-fluid .row {
-    //     min-height: 300px;
-
-    //     @include media-breakpoint-up(md) {
-    //       min-height: 320px;
-    //       height: calc(100vh - 37px);
-    //       max-height: 370px;
-    //     }
-
-    //     @include media-breakpoint-up(lg) {
-    //       min-height: 320px;
-    //       height: calc(100vh - 37px);
-    //       max-height: 370px;
-    //     }
-    //   }
-    // }
-
-    &.tall {
-
-      .container-fluid .row {
-        height: calc(100vh;
-        padding-top: 60px;
-
-        @include media-breakpoint-up(md) {
-          min-height: 400px;
-          height: calc(100vh);
-          padding-top: 125px
-        }
-
-        @include media-breakpoint-up(lg) {
-          min-height: 450px;
-          height: calc(100vh);
-          padding-top: 125px;
-        }
+      &.overlay-black {
+        background-color: rgba($black, 0.4);
       }
-
-      .section-column {
-        display: flex;
+      &.overlay-graydark {
+        background-color: rgba($gray-700,.8);
       }
+      &.overlay-gray {
+        background-color: rgba($gray-500,.8);
+      }
+      &.overlay-graylight {
+        background-color: rgba($gray-200,.8);
+      }
+      &.overlay-white {
+        background-color: rgba($white, 0.6);
+      }
+      &.overlay-green {
+        background-color: rgba($green,.8);
+      }
+      &.overlay-red {
+        background-color: rgba($red, 0.5);
+      }
+      &.overlay-pink {
+        background-color: rgba($pink,.8);
+      }
+      &.overlay-blue {
+        background-color: rgba($blue,.8);
+      }
+      &.overlay-blue-gray {
+        background-color: rgba($blue-gray,.8);
+      }
+      &.overlay-teal {
+        background-color: rgba($teal,.8);
+      }
+      &.overlay-purple {
+        background-color: rgba($purple, 0.6);
+      }
+    } //overlay
+
+    &.background-image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-  }
 
+    &.section-background-black {
+      background-color: $black;
+      color: $gray-400;
+    } //black
 
-  .overlay {
-    background-color: transparent;
-    position: relative;
+    &.section-background-graydark {
+      background-color: $gray-900;
+      color: $gray-200;
+    } //graydark
 
-    &.overlay-black {
-      background-color: rgba($black, 0.4);
+    &.section-background-gray {
+      background-color: $gray-500;
+      color: $gray-100;
+    } //gray
+
+    &.section-background-graylight {
+      background-color: $gray-200;
+      color: $gray-900;
+    } //graylight
+
+    &.section-background-blue {
+      background-color: $blue;
+      color: $gray-100;
     }
-    &.overlay-graydark {
-      background-color: rgba($gray-700,.8);
+
+    &.section-background-purple {
+      background-color: $purple;
+      color: $gray-100;
     }
-    &.overlay-gray {
-      background-color: rgba($gray-500,.8);
+
+    &.section-background-blue-grad {
+      @include gradient-directional(($blue - 20), $blue, 135deg);
     }
-    &.overlay-graylight {
-      background-color: rgba($gray-200,.8);
+
+    &.section-background-green {
+      background-color: $green;
+      color: $black;
     }
-    &.overlay-white {
-      background-color: rgba($white, 0.6);
+
+    &.section-background-pink {
+      background-color: $pink;
+      color: $gray-100;
     }
-    &.overlay-green {
-      background-color: rgba($green,.8);
+
+    &.section-background-red {
+      background-color: $red;
+      color: $gray-100;
     }
-    &.overlay-red {
-      background-color: rgba($red, 0.5);
-    }
-    &.overlay-pink {
-      background-color: rgba($pink,.8);
-    }
-    &.overlay-blue {
-      background-color: rgba($blue,.8);
-    }
-    &.overlay-blue-gray {
-      background-color: rgba($blue-gray,.8);
-    }
-    &.overlay-teal {
-      background-color: rgba($teal,.8);
-    }
-    &.overlay-purple {
-      background-color: rgba($purple, 0.6);
-    }
-  } //overlay
 
-  &.background-image {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    &.section-background-black,
+    &.section-background-graydark,
+    &.section-background-gray,
+    &.section-background-graylight,
+    &.section-background-blue,
+    &.section-background-green,
+    &.section-background-pink,
+    &.section-background-red {
 
-  &.section-background-black {
-    background-color: $black;
-    color: $gray-400;
-  } //black
+      .slide-inner {
+        svg {
+          opacity: 0.9;
+          transition-property: opacity;
+          transition-duration: 0.25s;
+          transition-timing-function: linear, ease-in-out;
 
-  &.section-background-graydark {
-    background-color: $gray-900;
-    color: $gray-200;
-  } //graydark
+          &:hover {
+            opacity: 1;
+          }
 
-  &.section-background-gray {
-    background-color: $gray-500;
-    color: $gray-100;
-  } //gray
-
-  &.section-background-graylight {
-    background-color: $gray-200;
-    color: $gray-900;
-  } //graylight
-
-  &.section-background-blue {
-    background-color: $blue;
-    color: $gray-100;
-  }
-
-  &.section-background-purple {
-    background-color: $purple;
-    color: $gray-100;
-  }
-
-  &.section-background-blue-grad {
-    @include gradient-directional(($blue - 20), $blue, 135deg);
-  }
-
-  &.section-background-green {
-    background-color: $green;
-    color: $black;
-  }
-
-  &.section-background-pink {
-    background-color: $pink;
-    color: $gray-100;
-  }
-
-  &.section-background-red {
-    background-color: $red;
-    color: $gray-100;
-  }
-
-  &.section-background-black,
-  &.section-background-graydark,
-  &.section-background-gray,
-  &.section-background-graylight,
-  &.section-background-blue,
-  &.section-background-green,
-  &.section-background-pink,
-  &.section-background-red {
-
-    .slide-inner {
-      svg {
-        opacity: 0.9;
-        transition-property: opacity;
-        transition-duration: 0.25s;
-        transition-timing-function: linear, ease-in-out;
-
-        &:hover {
-          opacity: 1;
-        }
-
-        path,
-        rect {
-          fill: $white;
+          path,
+          rect {
+            fill: $white;
+          }
         }
       }
     }
-  }
-  &.section-background-graylight,
-  &.section-background-green {
+    &.section-background-graylight,
+    &.section-background-green {
 
-    .slide-inner {
-      svg {
-        path,
-        rect {
-          fill: $gray-900;
+      .slide-inner {
+        svg {
+          path,
+          rect {
+            fill: $gray-900;
+          }
         }
       }
-    }
-    .swiper-next,
-    .swiper-prev {
-      svg {
-        path,
-        rect {
-          fill: $gray-900;
+      .swiper-next,
+      .swiper-prev {
+        svg {
+          path,
+          rect {
+            fill: $gray-900;
+          }
         }
       }
     }
