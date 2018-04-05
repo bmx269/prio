@@ -1,31 +1,6 @@
-.article.teaser {
-  position: relative;
-  padding: 3vw 0;
-
-  @include media-breakpoint-up(md) {
-    padding: 3vw 0;
-  }
-
-  @include media-breakpoint-up(xl) {
-    padding: 2vw 0;
-  }
-
-  .page-section .outer {
-    &.divided {
-      padding: 1.5vw 0;
-
-      @include media-breakpoint-up(md) {
-        padding: 1.5vw 0;
-      }
-      @include media-breakpoint-up(xl) {
-        padding: 1vw 0;
-      }
-    }
-  }
-} //.article.teaser
-
 .page-section {
   background-color: $white;
+
   .outer {
 
     &.hero-active {
@@ -40,28 +15,9 @@
       }
 
 
-      // &.short {
-      //   .container-fluid .row {
-      //     min-height: 300px;
-
-      //     @include media-breakpoint-up(md) {
-      //       min-height: 320px;
-      //       height: calc(100vh - 37px);
-      //       max-height: 370px;
-      //     }
-
-      //     @include media-breakpoint-up(lg) {
-      //       min-height: 320px;
-      //       height: calc(100vh - 37px);
-      //       max-height: 370px;
-      //     }
-      //   }
-      // }
-
       &.tall {
-
         .container-fluid .row {
-          height: calc(100vh;
+          height: calc(100vh);
           padding-top: 60px;
 
           @include media-breakpoint-up(md) {
@@ -76,11 +32,10 @@
             padding-top: 125px;
           }
         }
-
         .section-column {
           display: flex;
         }
-      }
+      } //tall
     }
 
 
@@ -232,104 +187,97 @@
   }
 } //.page-section .outer
 
-
-
-.page-section--muted {
-  background-color: #fff;
-  color: #607d8b;
-}
-
 .image img{
   display: block;
 }
 
-  .swiper-slide {
-    -webkit-flex-shrink: 0;
-    -ms-flex: 0 0 auto;
-    flex-shrink: 0;
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: grab;
+
+  .slide-inner {
     width: 100%;
-    height: auto;
+
+    .text {
+      // padding: 5px;
+
+      // @include media-breakpoint-up(md) {
+      //   padding: 10px;
+      // }
+
+      // @include media-breakpoint-up(lg) {
+      //   padding: 30px;
+      // }
+
+      svg {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.slideshow {
+
+  .inner {
     position: relative;
-    cursor: grab;
-
-    .slide-inner {
-      width: 100%;
-
-      .text {
-
-        svg {
-          max-width: 100%;
-        }
-        // padding: 5px;
-
-        // @include media-breakpoint-up(md) {
-        //   padding: 10px;
-        // }
-
-        // @include media-breakpoint-up(lg) {
-        //   padding: 30px;
-        // }
-      }
-    }
-  }
-  .slideshow {
-
-    .inner {
-      position: relative;
-      margin-top: 20px;
-      padding: 0px 10px;
-
-      @include media-breakpoint-up(md) {
-        margin-top: 40px;
-        padding: 0px 50px;
-      }
-    }
-  }
-  .swiper-next,
-  .swiper-prev {
-    z-index: 99;
-    position: absolute;
-    top: 0px;
-    left: -30px;
-    width: 30px;
-    height: 115px;
-    border: none;
-    border-radius: 0;
-    background: none;
-    cursor: pointer;
-    -webkit-transform: none;
-    transform: none;
-    opacity: 0.6;
-    display: none;
+    margin-top: 20px;
+    padding: 0px 10px;
 
     @include media-breakpoint-up(md) {
-      display: block;
-      width: 60px;
-      height: 100%;
-    }
-
-    &.swiper-button-disabled {
-      opacity: 0.2;
-      cursor: unset;
-    }
-
-    svg {
-      position: absolute;
-      left: 20%;
-      top: 0;
-      width: 60%;
-      height: 100%;
-
-        path {
-          fill: #fff;
-        }
+      margin-top: 40px;
+      padding: 0px 50px;
     }
   }
+}
+.swiper-next,
+.swiper-prev {
+  z-index: 99;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 30px;
+  height: 115px;
+  border: none;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 0.6;
+  display: none;
 
-  .swiper-next {
-    left: auto;
-    right: -30px;
+  @include media-breakpoint-up(md) {
+    display: block;
+    width: 60px;
+    height: 100%;
   }
+
+  &.swiper-button-disabled {
+    opacity: 0.2;
+    cursor: unset;
+  }
+
+  svg {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    width: 60%;
+    height: 100%;
+
+      path {
+        fill: #fff;
+      }
+  }
+}
+
+.swiper-next {
+  left: auto;
+  right: -30px;
+}
 
 
   .section-column {

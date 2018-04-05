@@ -156,4 +156,11 @@ p.call-out {
   font-weight: 500;
   font-size: 1.02rem;
   color: $blue;
+  font-family: $font-family-sans-serif;
+}
+
+span.highlight {
+  font-weight: 500;
+  color: $blue;
+  font-family: $font-family-sans-serif;
 }
