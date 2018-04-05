@@ -3,15 +3,23 @@
     padding-bottom: 1.5rem;
 
     .image {
-      border: 4px $white solid;
-      box-shadow: 6px 6px 12px rgba($black, 0.5);
-      margin-bottom: 10px;
+      border: 9px solid #edeeee;
+      box-shadow: 8px 8px 20px rgba(2,1,11,.2);
+      margin-bottom: 18px;
 
       img {
       }
     }
     .title {
+      font-weight: 600;
+      color: $blue;
+      padding-left: 0.7rem;
 
+      a {
+        color: #994878;
+        text-decoration: none;
+        font-weight: 300;
+      }
     }
   }
 }

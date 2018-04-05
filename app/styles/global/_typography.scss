@@ -84,22 +84,6 @@ span {
 }
 
 
-.article-title {
-  a {
-    display: inline-block;
-    color: $black;
-    padding: 4px 8px;
-    border-bottom: 1px solid rgba($gray-600, .3);
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: $pink;
-      border-color: $gray-600;
-    }
-  }
-}
-
 
 .btn {
 
@@ -128,29 +112,48 @@ span {
   }
 }
 
-
-.dev-logos {
-  text-align: center;
-  font-size: calc(2rem + 2.25vw);
-}
-
-p.hero-text {
-  font-size: 14px;
-  line-height: 1.2rem;
+.hero-text {
+  font-size: 20px;
 
   @include media-breakpoint-up(sm) {
-    line-height: 1.4rem;
-    font-size: 16px;
+    font-size: 25px;
   }
   @include media-breakpoint-up(md) {
-    font-size: 18px;
-    line-height: 1.6rem;
-  }
-  @include media-breakpoint-up(lg) {
-    line-height: 1.6rem;
-  }
-  @include media-breakpoint-up(xl) {
-    line-height: 1.8rem;
+    font-size: 30px;
   }
 }
 
+ul.hero-text {
+  font-size: 16px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: .5rem 0;
+      border-bottom: 1px solid rgba($white, .6);
+    }
+  }
+}
+
+
+p.call-out {
+  font-weight: 500;
+  font-size: 1.02rem;
+  color: $blue;
+}

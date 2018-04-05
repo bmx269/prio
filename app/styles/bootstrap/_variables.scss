@@ -73,11 +73,11 @@ $grays: (
 ) !default;
 
 $blue-gray: rgb(30,76,101);
-$blue:      #0093B2;
+$blue:      #0092a8;
 $blue-dark: rgb(15, 27, 37);
 $indigo:    #6610f2 !default;
 $purple:    #5F4B8B !default;
-$pink:      rgb(166,91,133);
+$pink:      #994878;
 $red:       #a40e1d;
 $orange:    #fd7e14 !default;
 $yellow:    #ffc107 !default;
@@ -171,9 +171,9 @@ $body-color:    #4F758B;
 // Style anchor elements.
 
 $link-color:            $blue;
-$link-decoration:       none;
+$link-decoration:       underline;
 $link-hover-color:      darken($blue, 5%);
-$link-hover-decoration: none;
+$link-hover-decoration: underline;
 $link-underline:        rgba($gray-600, .3);
 $link-hover-underline:  $gray-600;
 
@@ -241,10 +241,11 @@ $transition-collapse:    height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif: 'Alegreya Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif: 'Alegreya', serif, !default;
 $font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif;
+$font-family-base:       $font-family-serif;
 
-$font-size-base: .8rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 
@@ -254,9 +255,9 @@ $font-weight-bold: 700;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.4 !default;
 
-$h1-font-size: 2.6rem !default;
-$h2-font-size: 2.2rem !default;
-$h3-font-size: 1.35rem !default;
+$h1-font-size: 2.75rem !default;
+$h2-font-size: 1.4rem !default;
+$h3-font-size: 1.3rem !default;
 $h4-font-size: 1.15rem !default;
 $h5-font-size: 1rem !default;
 $h6-font-size: 1rem !default;
@@ -278,8 +279,8 @@ $display3-weight:     300 !default;
 $display4-weight:     300 !default;
 $display-line-height: $headings-line-height !default;
 
-$lead-font-size:   1.25rem !default;
-$lead-font-weight: 300 !default;
+$lead-font-size:   1.6rem !default;
+$lead-font-weight: 400 !default;
 
 $small-font-size: 80% !default;
 
@@ -498,21 +499,21 @@ $form-feedback-invalid-color: theme-color("danger") !default;
 //
 // Dropdown menu container and contents.
 
-$dropdown-min-width:             10rem !default;
+$dropdown-min-width:             15rem !default;
 $dropdown-padding-y:             .5rem !default;
 $dropdown-spacer:                .125rem !default;
-$dropdown-bg:                    $white !default;
+$dropdown-bg:                    $black !default;
 $dropdown-border-color:          rgba($black,.15) !default;
-$dropdown-border-width:          $border-width !default;
+$dropdown-border-width:          0 !default;
 $dropdown-divider-bg:            $gray-200 !default;
 $dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175) !default;
 
-$dropdown-link-color:            $gray-900 !default;
-$dropdown-link-hover-color:      darken($gray-900, 5%) !default;
+$dropdown-link-color:            $white !default;
+$dropdown-link-hover-color:      $black;
 $dropdown-link-hover-bg:         $gray-100 !default;
 
-$dropdown-link-active-color:     $component-active-color !default;
-$dropdown-link-active-bg:        $component-active-bg !default;
+$dropdown-link-active-color:     $black;
+$dropdown-link-active-bg:        $gray-500 !default;
 
 $dropdown-link-disabled-color:   $gray-600 !default;
 
@@ -537,7 +538,7 @@ $zindex-tooltip:            1070 !default;
 
 // Navs
 
-$nav-link-padding-y:            .5rem !default;
+$nav-link-padding-y:            .2rem !default;
 $nav-link-padding-x:            1rem !default;
 $nav-link-disabled-color:       $gray-600 !default;
 

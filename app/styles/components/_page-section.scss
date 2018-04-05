@@ -407,13 +407,14 @@
 
 
   .overlay-container {
-    background: #fff;
-    margin: 30px;
-    padding: 60px;
+    background-color: $white;
+    margin: 30px 30px 0 30px;
+    padding: 1.5rem;
   }
 }
 
 .liquid-application {
+  background-color: $gray-500;
   overflow: visible !important;
   min-height: 100vh;
 
