@@ -6,5 +6,6 @@ export default DS.Model.extend({
   status: DS.attr('boolean'),
   image: DS.belongsTo('file', { async: true }),
   thumbnail: DS.belongsTo('file', { async: true }),
-  section: DS.hasMany('section', { async: true })
+  section: DS.hasMany('section', { async: true }),
+  snapshotlisting: DS.belongsTo('snapshotlisting', { async: true })
 });

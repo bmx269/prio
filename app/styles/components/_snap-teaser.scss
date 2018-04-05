@@ -1,0 +1,17 @@
+.snapshot {
+  &.teaser {
+    padding-bottom: 1.5rem;
+
+    .image {
+      border: 4px $white solid;
+      box-shadow: 6px 6px 12px rgba($black, 0.5);
+      margin-bottom: 10px;
+
+      img {
+      }
+    }
+    .title {
+
+    }
+  }
+}

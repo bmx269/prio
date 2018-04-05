@@ -1,0 +1,10 @@
+<div class="snapshot teaser">
+  <div class='image'>
+    {{#link-to "snapshot" snap.id}}
+      <img src="{{snap.thumbnail.url}}" class="img-fluid w-100">
+    {{/link-to}}
+  </div>
+  <div class='title'>
+    {{snap.title}} {{#link-to "snapshot" snap.id}}Read More{{/link-to}}
+  </div>
+</div>

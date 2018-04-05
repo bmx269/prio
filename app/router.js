@@ -39,7 +39,7 @@ Router.map(function() {
       this.route('member',{ path: ':team_id' });
     });
   });
-  this.route('snapshot', { path: '/snapshot/:snapshot_id' });
+  this.route('snapshot', { path: '/snapshot/:snap_id' });
   this.route('priority', function() {
     this.route('video');
   });

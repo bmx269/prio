@@ -1,27 +1,35 @@
 {{#if section.show}}
   <div class="outer {{section.background}} {{section.heroSize}}{{if section.isHero ' hero-active'}}{{if section.divider ' divided'}}{{if section.backgroundImage ' background-image'}}" style="{{section.backgroundImage.inlineBackground}}">
     <div class='overlay {{section.overlay}}'>
-
-      {{#if section.divider}}
-        {{angled-divider}}
-      {{/if}}
       <div class="content-wrapper">
         <div class="container-fluid">
           <div class='row {{section.colVerticalAlignment}} {{section.colHorizontalAlignment}} {{if section.reverse 'flex-sm-row-reverse'}}'>
 
           {{#each section.column as |column|}}
-            <div class='section-column {{column.columnWidthXs}} {{column.columnWidthSm}} {{column.columnWidthMd}} {{column.columnWidthLg}} {{column.columnWidthXl}} {{column.alignment}}'>
+            <div class='section-column {{column.columnWidthXs}} {{column.columnWidthSm}} {{column.columnWidthMd}} {{column.columnWidthLg}} {{column.columnWidthXl}} {{column.alignment}} {{column.css}}'>
 
             {{#each column.element as |element|}}
+
               {{#if element.body }}
                 <div class='element-text col'>
                   <div class='inner'>
-                    {{html-safe element.body.value}}
+                    {{html-safe element.body.processed}}
                   </div>
                 </div>
+
+              {{else if element.snapshot}}
+                <div class='element-snapshots col'>
+                  <div class='inner'>
+                    {{#each element.snapshot as |snap|}}
+                      {{snap-teaser snap=snap}}
+                    {{/each}}
+                  </div>
+                </div>
+
               {{else if element.listingType}}
                 <div class='element-listing col'>
                   <div class='inner'>
+
                     {{#if (eq element.listingType "articles")}}
                       {{#if articles}}
                         {{#each (sort-by "created" articles) as |article|}}
@@ -35,22 +43,29 @@
                     {{/if}}
                   </div>
                 </div>
+
               {{else if element.accitem}}
-              {{#bs-accordion as |acc|}}
-              {{#each element.accitem as |accordion|}}
-                  {{#acc.item as |aitem|}}
-                    {{#aitem.title}}
-                      {{accordion.title}}
-                    {{/aitem.title}}
-                    {{#aitem.body}}
-                      {{html-safe accordion.body.value}}
-                    {{/aitem.body}}
-                  {{/acc.item}}
-                  {{/each}}
-              {{/bs-accordion}}
+                <div class='element-accordion col'>
+                  <div class='inner'>
+                    {{#bs-accordion as |acc|}}
+                      {{#each element.accitem as |accordion|}}
+                        {{#acc.item as |aitem|}}
+                          {{#aitem.title}}
+                            {{accordion.title}}
+                          {{/aitem.title}}
+                          {{#aitem.body}}
+                            {{html-safe accordion.body.processed}}
+                          {{/aitem.body}}
+                        {{/acc.item}}
+                      {{/each}}
+                    {{/bs-accordion}}
+                  </div>
+                </div>
               {{else if element.image }}
-                <div class='image col'>
-                  <img src='{{element.image.fullUrl}}' alt='' srcset=''>
+                <div class='element-image col'>
+                  <div class='inner'>
+                  <img src='{{element.image.url}}' alt='{{element.image.meta.alt}}' class="img-fluid">
+                  </div>
                 </div>
               {{else if element.slide}}
               <div class='slideshow col'>
