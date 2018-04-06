@@ -44,10 +44,7 @@ Router.map(function() {
     this.route('video');
   });
   this.route('financial-life', function() {
-    this.route('management');
     this.route('clarity');
-    this.route('confidence');
-    this.route('control');
   });
   this.route('investment', function() {
     this.route('management');

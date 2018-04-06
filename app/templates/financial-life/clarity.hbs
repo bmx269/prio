@@ -1,6 +1,8 @@
 <div class="overlay-container">
   {{#each page.section as |section|}}
-    {{page-section section=section}}
+    {{page-section section=section selectSnapshot=(action 'selectSnapshot')}}
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
+
+{{snap-display snap=selectedSnapshot}}

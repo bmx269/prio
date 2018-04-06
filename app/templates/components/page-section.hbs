@@ -21,7 +21,16 @@
                 <div class='element-snapshots col'>
                   <div class='inner'>
                     {{#each element.snapshot as |snap|}}
-                      {{snap-teaser snap=snap}}
+                      <div class="snapshot teaser">
+                        <div class='image'>
+                          <a href="#snapshot" onclick={{action selectSnapshot snap}}>
+                            <img src="{{snap.thumbnail.url}}" class="img-fluid">
+                          </a>
+                        </div>
+                        <div class='title'>
+                          {{snap.title}} <a href="#snapshot" onclick={{action selectSnapshot snap}}>Read More</a>
+                        </div>
+                      </div>
                     {{/each}}
                   </div>
                 </div>

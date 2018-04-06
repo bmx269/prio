@@ -1,1 +1,20 @@
-{{yield}}
+{{#if snap}}
+  <div id="snapshot" class="snapshot-wrapper">
+    <div class="container-fluid">
+      <div class='row snapshot display align-items-center'>
+        <h1 class="text-center">Real-Life Snapshots</h1>
+        <div class="image">
+          <div class='inner'>
+            <img src="{{snap.image.url}}" class="img-fluid">
+          </div>
+        </div>
+        <div class="title">{{snap.title}}</div>
+        <div class="controls">Next</div>
+        {{!-- <button onclick={{action (mut selectedSnapshot) (next selectedSnapshot snapshots)}}>Next</button> --}}
+        {{#each snap.section as |section|}}
+          {{page-section section=section}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+{{/if}}
