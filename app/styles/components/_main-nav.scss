@@ -131,3 +131,38 @@
     background: none !important;
   }
 }
+
+
+.arrow-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+
+      a {
+        text-indent: -9999px;
+        height: 50px;
+        width: 50px;
+        display: block;
+        background: transparent center center no-repeat;
+        overflow: hidden;
+        text-align: left;
+        margin: 40px 40px;
+
+        &.arrow-up {
+          background-image: url('/img/up-arrow.svg');
+        }
+        &.arrow-down {
+          background-image: url('/img/down-arrow.svg');
+        }
+      }
+    }
+  }
+}

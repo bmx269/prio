@@ -1,12 +1,4 @@
-<div class="header-wrapper fixed-top w-100">
-  <div class="fluid-container">
-    <div class="row">
-      <div class="menu col-4 col-md-3 col-lg-3">
-        {{main-nav}}
-      </div>
-      <div class="site-info col-4 col-md-6 col-lg-6 text-center">
-        {{#link-to "index" class="text-center"}}
-          <svg version="1.1"
+<svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="149px" height="50px" viewBox="-0.469 -0.502 149 50" enable-background="new -0.469 -0.502 149 50"
 	 xml:space="preserve">
@@ -72,11 +64,3 @@
 		c13.597,0,24.659-11.062,24.659-24.659C49.319,11.063,38.257,0.001,24.66,0.001"/>
 </g>
 </svg>
-{{/link-to}}
-      </div>
-      <div class="login col-4 col-md-3 col-lg-3">
-      </div>
-    </div>
-  </div>
-</div>
-
