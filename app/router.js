@@ -35,9 +35,8 @@ Router.map(function() {
   this.route('about', function() {
     this.route('our-story');
     this.route('how-different');
-    this.route('your-team', function() {
-      this.route('member',{ path: ':team_id' });
-    });
+    this.route('your-team');
+    this.route('member',{ path: '/your-team/:team_id' });
   });
   this.route('snapshot', { path: '/snapshot/:snap_id' });
   this.route('priority', function() {

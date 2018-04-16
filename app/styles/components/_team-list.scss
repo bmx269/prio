@@ -1,0 +1,88 @@
+.team-list {
+  .profile {
+    @extend .col-12;
+    @extend .col-sm-6;
+    @extend .col-md-4;
+    @extend .col-lg-4;
+    @extend .col-xl-3;
+
+    padding: .5rem;
+
+    @include media-breakpoint-up(sm) {
+    }
+    @include media-breakpoint-up(md) {
+    }
+
+
+    .image {
+      @extend .d-flex;
+
+      position: relative;
+      width: 100%;
+      max-width: 350px;
+      height: 250px;
+      background-position: center top;
+      background-size: cover;
+      background-color: $gray-300;
+
+      .inner {
+        @extend .d-flex;
+        @extend .align-items-center;
+        @extend .justify-content-center;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition-property:color, text-shadow, box-shadow, background-color opacity;
+        transition-duration: 0.2s;
+        transition-timing-function: linear, ease;
+        padding: 5px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: 1;
+          background: rgba($blue, .4);
+        }
+      }
+
+      .name {
+        font-weight:700;
+        font-size: 1.2rem;
+        font-family: $font-family-sans-serif;
+        color: $white;
+
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+        .title {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.profile-over {
+  // position: absolute;
+  // top: 58px;
+  // left: 0;
+  // right: 0;
+  // z-index: 99;
+  position: relative;
+  margin-top: calc(-100vh + 58px);
+
+
+  .team-profile {
+    background-color: $white;
+    margin: 0px;
+
+    @include media-breakpoint-up(md) {
+      margin: 0px;
+    }
+  }
+}

@@ -1,1 +1,26 @@
-{{yield}}
+<div class="team-list">
+  <div class="outer">
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        <div class='row'>
+          {{#each (sort-by "lastName" team) as |profile|}}
+          <div class='profile'>
+            <div class='image text-center' style="{{profile.image.inlineBackground}}">
+              <div class='inner'>
+                <div class="name">
+                  {{#link-to "about.member" profile.id class="full-name"}}
+                    {{profile.firstName}} {{#if profile.middleInitial}} {{profile.middleInitial}}{{/if}} {{profile.lastName}}
+                  {{/link-to}}
+                  <div class='title'>
+                    {{profile.professionalTitle}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

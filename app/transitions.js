@@ -97,6 +97,8 @@ export default function(){
       'about.your-team',
       'about.our-story',
       'about.how-different',
+      'about.member',
+      'financial-life.clarity',
       'financial-life.management',
       'financial-life.control',
       'financial-life.confidence',
@@ -106,13 +108,6 @@ export default function(){
     this.use('toUp', { duration: 800 }),
   );
 
-  this.transition(
-    this.toRoute([
-      'financial-life.clarity',
-    ]),
-    this.use('toLeft', { duration: 200 }),
-    this.reverse('toRight')
-  );
   // this.transition(
   //   this.fromRoute('home'),
   //   this.toRoute(['about.your-team','about.our-story','about.how-different']),

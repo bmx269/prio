@@ -358,8 +358,13 @@
 
   .overlay-container {
     background-color: $white;
-    margin: 30px 30px 0 30px;
-    padding: 1.5rem;
+    margin: 20px 10px 0 10px;
+    padding: .25rem;
+
+    @include media-breakpoint-up(md) {
+      margin: 30px 30px 0 30px;
+      padding: 1.5rem
+    }
   }
 }
 
