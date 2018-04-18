@@ -6,10 +6,12 @@ export default Route.extend({
   model() {
     return RSVP.hash({
       page: this.store.findRecord('page', '67218008-3b14-4564-b32f-acc045f22d64'),
+      snapshots: this.store.findAll('snapshot')
     });
   },
 
   setupController(controller, models) {
     controller.set('page', models.page);
+    controller.set('snapshots', models.snapshots);
   }
 });

@@ -1,4 +1,5 @@
 {{#if snap}}
+{{#liquid-bind snap use="toRight" enableGrowth=false class="snap-container"}}
   <div id="snapshot" class="snapshot-wrapper">
     <div class="container-fluid">
       <div class='row snapshot display align-items-center'>
@@ -9,12 +10,23 @@
           </div>
         </div>
         <div class="title">{{snap.title}}</div>
-        <div class="controls">Next</div>
-        {{!-- <button onclick={{action (mut selectedSnapshot) (next selectedSnapshot snapshots)}}>Next</button> --}}
+        <div class="controls">
+          {{#if (has-next snap useDeepEqual snaps)}}
+            <div class="next">
+              <button onclick={{action (mut snap) (next snap snaps)}}>Next</button>
+            </div>
+          {{/if}}
+          {{#if (has-previous snap useDeepEqual snaps)}}
+            <div class="prev">
+              <button onclick={{action (mut snap) (previous snap snaps)}}>Previous</button>
+            </div>
+          {{/if}}
+        </div>
         {{#each snap.section as |section|}}
           {{page-section section=section}}
         {{/each}}
       </div>
     </div>
   </div>
+{{/liquid-bind}}
 {{/if}}

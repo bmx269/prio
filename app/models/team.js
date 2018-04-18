@@ -8,6 +8,8 @@ export default DS.Model.extend({
   lastName: DS.attr('string'),
   middleInitial: DS.attr('string'),
   professionalTitle: DS.attr('string'),
+  email: DS.attr('string'),
+  linkedin: DS.attr('string'),
   body: DS.attr(''),
   image: DS.belongsTo('file', { async: true }),
   thumbnail: DS.belongsTo('file', { async: true }),

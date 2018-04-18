@@ -23,7 +23,7 @@
       height: 250px;
       background-position: center top;
       background-size: cover;
-      background-color: $gray-300;
+      background-color: $black;
 
       .inner {
         @extend .d-flex;
@@ -83,6 +83,62 @@
 
     @include media-breakpoint-up(md) {
       margin: 0px;
+    }
+  }
+}
+
+
+.team-profile {
+
+  .profile {
+    .image {
+      margin-bottom: 3rem;
+
+      img {
+        display: block;
+      }
+    }
+    .name {
+      margin-bottom: 3rem;
+      min-height: 100px;
+      font-family: $font-family-sans-serif;
+  
+      h1 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $blue;
+        margin-bottom: 0;
+      }
+      .title {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+    }
+    .contact {
+      font-family: $font-family-sans-serif;
+      font-weight: 500;
+  
+      a {
+        font-size: .9rem;
+        text-decoration: none;
+      }
+      svg {
+        path{
+          fill: $gray-600;
+        }
+        
+      }
+    }
+  }
+  
+  .team-list {
+    margin-bottom: 3rem;
+
+    a {
+      color: $body-color;
+      font-family: $font-family-sans-serif;
+      font-weight: 500;
+      text-decoration: none;
     }
   }
 }

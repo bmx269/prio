@@ -10,10 +10,11 @@
                 <div class="name">
                   {{#link-to "about.member" profile.id class="full-name"}}
                     {{profile.firstName}} {{#if profile.middleInitial}} {{profile.middleInitial}}{{/if}} {{profile.lastName}}
+
+                    <div class='title'>
+                      {{profile.professionalTitle}}
+                    </div>
                   {{/link-to}}
-                  <div class='title'>
-                    {{profile.professionalTitle}}
-                  </div>
                 </div>
               </div>
             </div>

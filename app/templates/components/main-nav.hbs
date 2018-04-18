@@ -3,7 +3,18 @@
   {{#navbar.content collapse=false class=" navbar-dark navbar-expand"}}
     {{#navbar.nav as |nav|}}
       {{#nav.dropdown as |dd|}}
-        {{#dd.toggle collapseNavbar=false}}<i aria-hidden="true" class="fal fa-bars"></i>{{/dd.toggle}}
+        {{#dd.toggle collapseNavbar=false}}
+          <svg version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            x="0px" y="0px" width="78px" height="39px" viewBox="0 -0.035 78 39" enable-background="new 0 -0.035 78 39"
+            xml:space="preserve">
+            <defs>
+            </defs>
+            <line fill="none" stroke="#3B6E8F" stroke-width="4.6" x1="77.866" y1="36.81" x2="0" y2="36.81"/>
+            <line fill="none" stroke="#3B6E8F" stroke-width="4.6" x1="77.866" y1="19.555" x2="0" y2="19.555"/>
+            <line fill="none" stroke="#3B6E8F" stroke-width="4.6" x1="77.866" y1="2.3" x2="0" y2="2.3"/>
+          </svg>
+        {{/dd.toggle}}
         {{#dd.menu as |ddm|}}
           {{#ddm.item}}
             {{#ddm.link-to "about"}}About{{/ddm.link-to}}
