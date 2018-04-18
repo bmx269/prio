@@ -55,6 +55,7 @@
     "ember-metrics": "^0.12.1",
     "ember-resolver": "^4.0.0",
     "ember-router-scroll": "^0.5.0",
+    "ember-scroll-to": "^0.6.4",
     "ember-source": "~3.1.0",
     "ember-sticky-element": "^0.2.0",
     "ember-truth-helpers": "^2.0.0",

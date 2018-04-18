@@ -24,13 +24,13 @@
       }
 
     }
-    .title {
+    .title a {
       font-weight: 700;
       color: $blue;
-      // padding-left: 0.7rem;
+      text-decoration: none;
       padding-bottom: 1rem;
 
-      a {
+      .readmore {
         color: #994878;
         text-decoration: none;
         font-weight: 300;
