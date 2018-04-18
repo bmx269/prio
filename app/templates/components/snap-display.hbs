@@ -14,12 +14,50 @@
           <div class="controls">
             {{#if (has-next snap useDeepEqual snaps)}}
               <div class="next">
-                <button onclick={{action (mut snap) (next snap snaps)}}>Next</button>
+                <a onclick={{action (mut snap) (next snap snaps)}}>
+                  <svg version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                      x="0px" y="0px" width="63px" height="63px" viewBox="-0.645 -0.551 63 63" enable-background="new -0.645 -0.551 63 63"
+                      xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" width="61.763" height="61.763"/>
+                      </defs>
+                      <clipPath id="SVGID_2_">
+                        <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                      </clipPath>
+                      <path clip-path="url(#SVGID_2_)" fill="#A1B7CD" d="M30.881,61.763c17.056,0,30.882-13.825,30.882-30.882
+                        C61.763,13.825,47.937,0,30.881,0C13.827,0,0,13.825,0,30.881C0,47.938,13.827,61.763,30.881,61.763"/>
+                    </g>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" points="22.3,11.094 46.929,31.011 22.3,50.93 "/>
+                    </svg>
+                </a>
               </div>
             {{/if}}
             {{#if (has-previous snap useDeepEqual snaps)}}
               <div class="prev">
-                <button onclick={{action (mut snap) (previous snap snaps)}}>Previous</button>
+                <a onclick={{action (mut snap) (previous snap snaps)}}>
+                  <svg version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                      x="0px" y="0px" width="63px" height="63px" viewBox="-0.645 -0.551 63 63" enable-background="new -0.645 -0.551 63 63"
+                      xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" width="61.763" height="61.763"/>
+                      </defs>
+                      <clipPath id="SVGID_2_">
+                        <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                      </clipPath>
+                      <path clip-path="url(#SVGID_2_)" fill="#A1B7CD" d="M30.881,61.763c17.056,0,30.882-13.825,30.882-30.882
+                        C61.763,13.825,47.937,0,30.881,0C13.827,0,0,13.825,0,30.881C0,47.938,13.827,61.763,30.881,61.763"/>
+                    </g>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" points="22.3,11.094 46.929,31.011 22.3,50.93 "/>
+                    </svg>
+                </a>
               </div>
             {{/if}}
           </div>
