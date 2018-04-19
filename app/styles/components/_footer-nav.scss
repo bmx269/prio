@@ -84,10 +84,9 @@ footer {
   }
 
   .copyright {
-    color: $gray-600;
-    font-size: .7rem;
+    color: $blue-gray;
+    font-size: $font-size-base *.9;
     line-height: 1rem;
     text-align: center;
   }
 } // footer
-

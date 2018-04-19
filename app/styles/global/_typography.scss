@@ -179,7 +179,15 @@ ul.hero-text {
       color: #fff;
       text-decoration: none;
       padding: .5rem 0;
-      border-bottom: 1px solid rgba($white, .6);
+      border-bottom: 1px solid #ffffff;
+      font-size: 1.1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.55rem;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 1.65rem;
+      }
     }
   }
 }
