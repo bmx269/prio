@@ -1,4 +1,11 @@
 <div class="overlay-container">
+    <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class='row'>
+          {{#link-to 'about.how-different' class='col text-left'}}How We're Different{{/link-to}}
+      </div>
+    </div>
+  </div>
   {{#each page.section as |section|}}
     {{page-section section=section}}
   {{/each}}

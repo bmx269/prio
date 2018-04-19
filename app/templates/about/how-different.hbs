@@ -1,4 +1,11 @@
 <div class="overlay-container">
+  <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class='row'>
+          {{#link-to 'about.our-story' class='col text-left'}}Our Story{{/link-to}} {{#link-to 'about.your-team' class='col text-right'}}Meet Your Team{{/link-to}}
+      </div>
+    </div>
+  </div>
   {{#each page.section as |section|}}
     {{page-section section=section selectSnapshot=(action 'selectSnapshot')}}
   {{/each}}
