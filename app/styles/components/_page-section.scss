@@ -355,7 +355,7 @@
   // right: 0;
   // z-index: 99;
   position: relative;
-  margin-top: calc(-100vh + 76px);
+  margin-top: calc(-100vh + 100px);
 
 
   .overlay-container {
@@ -420,3 +420,47 @@
 .results .element-text{
   background-color: $green;
 }
+
+
+.element-accordion {
+  margin-bottom: 2rem;
+
+  .accordion-title {
+    background-color: rgba($card-bg, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: rgba($card-bg, 0.15);
+    }
+    h5 {
+      a {
+        display: inline-block;
+        width: 90%;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: $blue;
+        }
+      }
+      &:after {
+        @extend .fas;
+        content: '\f0d7';
+        color: $blue;
+        display: inline-block;
+        float: right;
+        padding-right: 1rem;
+      }
+    }
+    &.collapsed {
+
+      h5 {
+        &:after {
+          content: '\f0d8';
+        }
+      }
+    }
+  }
+}
+
+

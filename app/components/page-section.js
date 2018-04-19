@@ -1,7 +1,4 @@
 import Component from '@ember/component';
-// import { setProperties } from '@ember/object';
-// import { on } from '@ember/object/evented';
-// import InViewportMixin from 'ember-in-viewport';
 
 export default Component.extend({
   // appCont: Ember.inject.controller('application'),
@@ -28,5 +25,9 @@ export default Component.extend({
         spaceBetween: 80
       }
     };
+  },
+
+  didRender() {
+    this.$('iframe').wrap('<div class="responsive-embed"></div>');
   },
 });

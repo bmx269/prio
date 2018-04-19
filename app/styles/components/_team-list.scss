@@ -4,7 +4,7 @@
     @extend .col-sm-6;
     @extend .col-md-4;
     @extend .col-lg-4;
-    @extend .col-xl-3;
+    @extend .col-xl-4;
 
     padding: .5rem;
 
@@ -16,14 +16,30 @@
 
     .image {
       @extend .d-flex;
+      @extend .m-auto;
 
       position: relative;
       width: 100%;
-      max-width: 350px;
-      height: 250px;
+      height: 350px;
+      max-width: 400px;
       background-position: center top;
       background-size: cover;
       background-color: $black;
+
+
+      @include media-breakpoint-up(sm) {
+        height: 300px;
+        max-width: 350px;
+      }
+      @include media-breakpoint-up(md) {
+        height: 250px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 300px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 350px;
+      }
 
       .inner {
         @extend .d-flex;
@@ -102,7 +118,7 @@
       margin-bottom: 3rem;
       min-height: 100px;
       font-family: $font-family-sans-serif;
-  
+
       h1 {
         font-size: 1.8rem;
         font-weight: 500;
@@ -117,7 +133,7 @@
     .contact {
       font-family: $font-family-sans-serif;
       font-weight: 500;
-  
+
       a {
         font-size: .9rem;
         text-decoration: none;
@@ -126,11 +142,11 @@
         path{
           fill: $gray-600;
         }
-        
+
       }
     }
   }
-  
+
   .team-list {
     margin-bottom: 3rem;
 

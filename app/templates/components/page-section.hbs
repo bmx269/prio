@@ -23,21 +23,21 @@
                     {{#each element.snapshot as |snap|}}
                       <div class="snapshot teaser">
                         <div class='image'>
-                          {{#scroll-to 
+                          {{#scroll-to
                             href='#snapshot'
                             duration=1000
                             easing='linear'
-                            offset=-80
+                            offset=-120
                             }}
                             <img src="{{snap.thumbnail.url}}" class="img-fluid" onclick={{action selectSnapshot snap}}>
                           {{/scroll-to}}
                         </div>
                         <div class='title'>
-                          {{#scroll-to 
+                          {{#scroll-to
                             href='#snapshot'
                             duration=1000
                             easing='linear'
-                            offset=-80
+                            offset=-120
                             }}
                           <div onclick={{action selectSnapshot snap}}>{{snap.title}} <span class="readmore">Read More</span></div>
                           {{/scroll-to}}

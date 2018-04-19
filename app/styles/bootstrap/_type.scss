@@ -40,7 +40,6 @@ h3, .h3 {
   font-weight: 500;
   margin-bottom: 1.3rem;
   color: $blue;
-  margin-top: 1.3rem;
 
   @include media-breakpoint-up(md) {
     font-size: $h3-font-size;
@@ -55,10 +54,11 @@ h4, .h4 {
   }
 }
 h5, .h5 { font-size: $h5-font-size;
-  }
   a {
     color: $blue;
   }
+}
+
 
 h6, .h6 { font-size: $h6-font-size; }
 
