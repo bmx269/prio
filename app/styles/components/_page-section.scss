@@ -186,9 +186,9 @@
   }
 } //.page-section .outer
 
-.image img{
-  display: block;
-}
+// .image img{
+//   display: block;
+// }
 
 .swiper-slide {
   -webkit-flex-shrink: 0;
@@ -360,6 +360,7 @@
     background-color: $white;
     margin: 20px 10px 0 10px;
     padding: .25rem;
+    min-height: 85vh;
 
     @include media-breakpoint-up(md) {
       margin: 30px 30px 0 30px;
@@ -375,5 +376,6 @@
 
   > .liquid-child {
     overflow: visible;
+    min-height: 100vh;
   }
 }

@@ -13,7 +13,18 @@ html {
 }
 
 body {
+  > .ember-view {
+    @extend .d-flex;
+    @extend .flex-column;
 
+    .liquid-application {
+
+    }
+
+    footer {
+      @extend .mt-auto;
+    }
+  }
 }
 
 .container-fluid {

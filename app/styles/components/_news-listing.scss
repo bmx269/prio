@@ -1,0 +1,19 @@
+.news-list {
+  border-top: 1px $gray-600 solid;
+
+  .article {
+    border-bottom: 1px $gray-600 solid;
+
+    .image {
+      border-bottom: 8px $teal solid;
+      min-height: 200px;
+    }
+
+    .more {
+      text-transform: uppercase;
+      color: $blue;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}

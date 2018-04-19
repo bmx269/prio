@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import { computed } from '@ember/object';
 
 export default Controller.extend({
   init() {
@@ -6,7 +7,7 @@ export default Controller.extend({
     this.selectedSnapshot = null; 
   },
 
-  snapshotsAsArray: Ember.computed('snapshots.[]', function(){
+  snapshotsAsArray: computed('snapshots.[]', function(){
     return this.get('snapshots').toArray();
   }),
 

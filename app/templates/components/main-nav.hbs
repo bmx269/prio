@@ -6,7 +6,7 @@
         {{#dd.toggle collapseNavbar=false}}
           <svg version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-            x="0px" y="0px" width="78px" height="39px" viewBox="0 -0.035 78 39" enable-background="new 0 -0.035 78 39"
+            x="0px" y="0px" width="50px" height="39px" viewBox="0 -0.035 78 39" class="align-self-center img-fluid"  enable-background="new 0 -0.035 78 39"
             xml:space="preserve">
             <defs>
             </defs>
@@ -51,10 +51,10 @@
             {{#ddm.link-to "news"}}What's New{{/ddm.link-to}}
             {{#navbar.nav class="flex-column" as |nav|}}
               {{#nav.item}}
-                {{#nav.link-to "news"}}Trending Stories{{/nav.link-to}}
+                {{#nav.link-to "news.trending" collapseNavbar=false}}Trending Stories{{/nav.link-to}}
               {{/nav.item}}
               {{#nav.item}}
-                {{#nav.link-to "news"}}Archive{{/nav.link-to}}
+                {{#nav.link-to "news.archive" collapseNavbar=false}}Archive{{/nav.link-to}}
               {{/nav.item}}
             {{/navbar.nav}}
           {{/ddm.item}}

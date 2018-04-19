@@ -1,1 +1,29 @@
-{{yield}}
+<div class="news-list">
+  <div class="outer">
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        {{#each (sort-by "-created" articles) as |article|}}
+          <div class="article row">
+            <div class="image text-center d-flex align-items-center justify-content-center col-12 col-md-4 col-lg-3">
+              <img src="{{article.thumbnail.url}}" class="img-fluid">
+            </div>
+            <div class="teaser py-3 col-12 col-md-8 col-lg-9">
+              <div class="title">
+                  {{moment article.date 'MM-DD-YYYY'}}
+                  <h2>{{article.title}}</h2>
+              </div>
+              <div class="intro">
+                {{html-safe article.intro.value}}
+                {{#if article.useDownload}}
+                  <a href="{{article.file.url}}" target="_blank" class="more">Download PDF</a>
+                {{else}}
+                  {{#link-to "news.post" article.id class="more"}}More{{/link-to}}
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

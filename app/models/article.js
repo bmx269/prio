@@ -3,8 +3,14 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   title: DS.attr('string'),
   created: DS.attr(''),
+  date: DS.attr('date'),
   status: DS.attr('boolean'),
   intro: DS.attr(''),
-  body: DS.attr('string'),
+  body: DS.attr(''),
   slug: DS.attr('string'),
+  useDownload: DS.attr('boolean'),
+  archived: DS.attr('boolean'),
+  file: DS.belongsTo('file', { async: true }),
+  mage: DS.belongsTo('file', { async: true }),
+  thumbnail: DS.belongsTo('file', { async: true })
 });

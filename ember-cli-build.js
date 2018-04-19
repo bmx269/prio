@@ -8,6 +8,24 @@ module.exports = function(defaults) {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
       'importBootstrapCSS': false
+    },
+    'prember': {
+      // baseRoot: 'http://prio.surge.sh',
+      urls: [
+        '/',
+        '/about',
+        '/about/our-story',
+        '/about/how-different',
+        '/about/your-team',
+        '/financial-life',
+        '/financial-life/clarity',
+        '/investment',
+        '/investment/management',
+        '/news',
+        '/news/trending',
+        '/priority',
+        '/contact'
+      ]
     }
   });
 

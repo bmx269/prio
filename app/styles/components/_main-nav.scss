@@ -140,6 +140,10 @@
 
 .arrow-nav {
   position: absolute;
+  right: 0;
+  // top: 0;
+  width: 60px;
+
   @extend .align-self-center;
   @extend .col-12;
   @extend .col-sm-5;
@@ -173,7 +177,11 @@
         background: transparent center center no-repeat;
         overflow: hidden;
         text-align: left;
-        margin: 40px 40px;
+        margin: 40px 0;
+
+        @include media-breakpoint-up(sm) {
+          margin: 40px 40px;
+        }
 
         &.arrow-up {
           background-image: url('/img/up-arrow.svg');

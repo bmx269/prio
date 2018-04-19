@@ -49,8 +49,9 @@ Router.map(function() {
     this.route('management');
   });
   this.route('news', function() {
-    this.route('post', { path: ':article_id' });
+    this.route('trending');
     this.route('archive');
+    this.route('post', { path: '/news/:article_id' });
   });
   this.route('contact');
 

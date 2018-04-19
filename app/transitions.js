@@ -99,13 +99,13 @@ export default function(){
       'about.how-different',
       'about.member',
       'financial-life.clarity',
-      'financial-life.management',
-      'financial-life.control',
-      'financial-life.confidence',
       'investment.management',
-      'priority.video'
+      'priority.video',
+      'news.trending',
+      'news.archive',
+      'news.post'
     ]),
-    this.use('toUp', { duration: 800 }),
+    this.use('toUp', { duration }),
   );
 
   // this.transition(
