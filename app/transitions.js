@@ -17,6 +17,7 @@ export default function(){
   this.transition(
     this.fromRoute('index'),
     this.toRoute([
+      'about',
       'financial-life',
       'investment',
       'priority',

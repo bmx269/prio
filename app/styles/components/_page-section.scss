@@ -467,4 +467,24 @@
   }
 }
 
+.bluepopup {
+  background-color: $blue;
 
+  .container-fluid .row {
+    min-height: 400px;
+    height: calc(100vh);
+    padding-top: 125px;
+
+    @include media-breakpoint-up(sm) {
+      height: calc(100vh);
+    }
+
+    @include media-breakpoint-up(lg) {
+      min-height: 450px;
+      height: calc(100vh);
+    }
+  }
+  .section-column {
+    display: flex;
+  }
+}
