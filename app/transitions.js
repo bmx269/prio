@@ -108,6 +108,55 @@ export default function(){
     this.use('toUp', { duration }),
   );
 
+  this.transition(
+    this.fromRoute([
+      'about.our-story'
+    ]),
+    this.toRoute([
+      'about.how-different'
+    ]),
+    this.use('toUp', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.how-different'
+    ]),
+    this.toRoute([
+      'about.our-story'
+    ]),
+    this.use('toDown', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.how-different'
+    ]),
+    this.toRoute([
+      'about.your-team'
+    ]),
+    this.use('toUp', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.your-team'
+    ]),
+    this.toRoute([
+      'about.how-different'
+    ]),
+    this.use('toDown', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.member'
+    ]),
+    this.toRoute([
+      'about.your-team'
+    ]),
+    this.use('toDown', { duration }),
+  );
   // this.transition(
   //   this.fromRoute('home'),
   //   this.toRoute(['about.your-team','about.our-story','about.how-different']),

@@ -8,17 +8,17 @@ export default Route.extend({
       page: this.store.findRecord('page', 'af5ab178-3835-4eb9-9f8a-a79f7e7268bb'),
 
       // page: this.store.findRecord('page', '93aec22a-3710-4fe0-ae09-663f6790bb79'),
-    //   page: this.store.query('page', {
-    //     filter:
-    //       {
-    //         'slug':{
-    //           'value': '/'
-    //         },
-    //       },
-    //   })
-    //   .then(pages => {
-    //     return pages.get('firstObject');
-    //   }),
+      //   page: this.store.query('page', {
+      //     filter:
+      //       {
+      //         'slug':{
+      //           'value': '/'
+      //         },
+      //       },
+      //   })
+      //   .then(pages => {
+      //     return pages.get('firstObject');
+      //   }),
     });
   },
 
