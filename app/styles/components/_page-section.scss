@@ -470,6 +470,47 @@
 
 .bluepopup {
   background-color: rgb(43,72,88);
+  color: $white;
+
+  .logos {
+    margin-bottom: 4rem;
+  }
+
+  .link {
+    margin: 2rem 0;
+    font-family: $font-family-sans-serif;
+    font-weight: 500;
+
+    a {
+      color: $white;
+      font-style: normal;
+      font-size: 2.4rem;
+      font-weight: 700;
+
+
+      span {
+        border-bottom: 2px $white solid;
+        font-size: 1.2rem;
+      }
+      i {
+        font-size: 1.2rem;
+
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $blue;
+
+        span {
+          border-color: $blue;
+
+        }
+      }
+    }
+
+
+  }
 
   .container-fluid .row {
     min-height: 400px;
