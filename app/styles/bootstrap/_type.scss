@@ -28,7 +28,7 @@ h2, .h2 {
   font-size: ($h2-font-size * .9);
   font-weight: 500;
   color: $blue;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.3rem;
 
   @include media-breakpoint-up(md) {
     font-size: $h2-font-size;

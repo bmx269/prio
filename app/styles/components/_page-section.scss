@@ -398,11 +398,14 @@
   }
 
   ul {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     padding-left: 1rem;
 
     li {
       padding: 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding-bottom: 0.75rem;
     }
    }
 
@@ -412,17 +415,15 @@
 
 }
 .firm .element-text{
-
-  background-color: $blue;
+  background-color: rgb(74,146,160);
 }
 
-
 .approach .element-text{
-  background-color: $teal;
+  background-color: rgb(30,76,101);
 }
 
 .results .element-text{
-  background-color: $green;
+  background-color: rgb(156,165,80);
 }
 
 
@@ -468,7 +469,7 @@
 }
 
 .bluepopup {
-  background-color: $blue;
+  background-color: rgb(43,72,88);
 
   .container-fluid .row {
     min-height: 400px;
