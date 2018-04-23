@@ -17,7 +17,7 @@
               <div class='image'>
                 <img src="{{profile.image.url}}" class="profile-pic">
               </div>
-              <div class='team-list'>
+              <div class='team-list d-none d-sm-block'>
                 {{#each (sort-by "lastName" team) as |profile|}}
                   <div class="member">
                     {{#link-to "about.member" profile.id class="full-name"}}
@@ -28,14 +28,14 @@
               </div>
             </div>
             <div class='col'>
-              <div class='d-flex'>
-                <div class="name">
+              <div class='row personal'>
+                <div class="name col-12 col-md-8">
                   <h1>{{profile.firstName}} {{#if profile.middleInitial}} {{profile.middleInitial}}{{/if}} {{profile.lastName}}</h1>
                   <div class='title'>
                     {{profile.professionalTitle}}
                   </div>
                 </div>
-                <div class="contact text-right ml-auto">
+                <div class="contact text-md-right col-12 col-md-4 ml-auto">
                   {{#if profile.email}}
                     <div class='email'>
                       <a href="mailto:{{profile.email}}">Email {{profile.firstName}}</a>

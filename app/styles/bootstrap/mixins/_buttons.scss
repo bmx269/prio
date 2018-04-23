@@ -7,8 +7,9 @@
   @include color-yiq($background);
   background-color: $background;
   border-color: $border;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   @include box-shadow($btn-box-shadow);
+  margin: calc($padding-y * .5) 0;
 
   &:hover {
     @include color-yiq($background);

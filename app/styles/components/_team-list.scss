@@ -114,9 +114,11 @@
         display: block;
       }
     }
-    .name {
+    .personal {
       margin-bottom: 3rem;
       min-height: 100px;
+    }
+    .name {
       font-family: $font-family-sans-serif;
 
       h1 {

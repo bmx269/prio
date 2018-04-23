@@ -1,4 +1,11 @@
 <div class="overlay-container">
+  <div class="bread-nav">
+    <div class="container-fluid">
+      <div class='row'>
+        {{#link-to 'news.archive' class='btn btn-outline-primary'}}Archive{{/link-to}}
+      </div>
+    </div>
+  </div>
   {{#each page.section as |section|}}
     {{page-section section=section}}
   {{/each}}

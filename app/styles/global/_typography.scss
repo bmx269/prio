@@ -228,6 +228,11 @@ span.highlight {
   font-weight: 500;
   color: $blue;
   font-family: $font-family-sans-serif;
+
+    em {
+      font-size: 1.15em;
+      font-style: normal;
+    }
 }
 
 

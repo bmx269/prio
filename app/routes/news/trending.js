@@ -9,12 +9,6 @@ export default Route.extend({
       // articles: this.store.findAll('article'),
       articles: this.store.query('article', {
         sort: "-date",
-        filter:
-          {
-            'archived':{
-              'value': false
-            },
-          },
       }),
     });
   },

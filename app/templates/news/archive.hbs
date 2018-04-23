@@ -1,7 +1,14 @@
 <div class="overlay-container">
+  <div class="bread-nav">
+    <div class="container-fluid">
+      <div class='row'>
+        {{#link-to 'news.trending' class='btn btn-outline-primary'}}Trending News{{/link-to}}
+      </div>
+    </div>
+  </div>
   {{#each page.section as |section|}}
     {{page-section section=section}}
   {{/each}}
-  {{news-listing articles=archive}}
+  {{article-archive articles=articles}}
   {{liquid-outlet enableGrowth=false}}
 </div>

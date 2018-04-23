@@ -5,6 +5,7 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
+      articles: this.store.findAll('article'),
       pages: this.store.findAll('page'),
       sections: this.store.findAll('section'),
       columns: this.store.findAll('column'),
@@ -18,6 +19,7 @@ export default Route.extend({
   },
 
   setupController(controller, models) {
+    controller.set('articles', models.articles);
     controller.set('pages', models.pages);
     controller.set('sections', models.sections);
     controller.set('columns', models.columns);
