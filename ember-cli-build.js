@@ -29,7 +29,9 @@ module.exports = function(defaults) {
         '/news/trending',
         '/news/archive',
         '/priority',
-        '/contact'
+        '/priority/video',
+        '/contact',
+        "/disclosure"
       ]
     }
   });

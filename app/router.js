@@ -54,11 +54,12 @@ Router.map(function() {
     this.route('post', { path: '/news/:article_id' });
   });
   this.route('contact');
+  this.route('disclosure');
 
   this.route('loading');
   // this.route('page', { path: ':slug'});
   this.route('notfound', { path: '/*path' });
-  this.route('disclosure');
+
 });
 
 export default Router;
