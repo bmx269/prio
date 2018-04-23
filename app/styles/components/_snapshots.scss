@@ -39,8 +39,10 @@
   }
   &.display {
     padding-bottom: 1.5rem;
+
     .image {
-      @extend .col;
+      @extend .col-12;
+      @extend .col-md-6;
 
       .inner {
       border: 9px solid #edeeee;
@@ -57,15 +59,25 @@
 
     }
     .title {
-      @extend .col-4;
+      @extend .col-8;
+      @extend .col-md-4;
+
       font-family: $font-family-sans-serif;
       text-align: left;
       font-weight: 500;
       color: $blue;
-      font-size: 3.5rem;
+      font-size: 2rem;
       line-height: 1.1;
       // padding-left: 0.7rem;
       padding-bottom: 1rem;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.75rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 3.5rem;
+      }
 
       a {
         color: #994878;
@@ -74,7 +86,9 @@
       }
     }
     .controls {
-      @extend .col-2;
+      @extend .col-4;
+      @extend .col-md-2;
+      @extend .text-center;
     }
   }
 }

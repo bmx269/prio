@@ -6,12 +6,12 @@
 
 .btn {
   display: inline-block;
+  font-family: $font-family-sans-serif;
   font-weight: $btn-font-weight;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  text-transform: uppercase;
   text-decoration: none;
   border: $input-btn-border-width solid transparent;
   @include button-size($input-btn-padding-y, $input-btn-padding-x, $font-size-base, $input-btn-line-height, $btn-border-radius);
