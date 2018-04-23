@@ -9,7 +9,7 @@ export default function(){
 
   this.transition(
     this.toRoute(
-      'index',
+      'index'
     ),
     this.use('toDown', { duration }),
   );
@@ -22,7 +22,8 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -35,7 +36,8 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -48,7 +50,8 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -60,7 +63,8 @@ export default function(){
       'financial-life',
       'priority',
       'news',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -74,7 +78,8 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -87,7 +92,8 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'contact'
+      'contact',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -104,7 +110,8 @@ export default function(){
       'priority.video',
       'news.trending',
       'news.archive',
-      'news.post'
+      'news.post',
+      'disclosure'
     ]),
     this.use('toUp', { duration }),
   );

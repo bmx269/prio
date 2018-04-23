@@ -357,6 +357,10 @@
   position: relative;
   margin-top: calc(-100vh + 100px);
 
+  &.disclosure {
+    margin-top: 0;
+  }
+
 
   .overlay-container {
     background-color: $white;
@@ -414,16 +418,43 @@
   }
 
 }
-.firm .element-text{
+.firm .element-text {
   background-color: rgb(74,146,160);
 }
 
-.approach .element-text{
+.approach .element-text {
   background-color: rgb(30,76,101);
 }
 
-.results .element-text{
+.results .element-text {
   background-color: rgb(156,165,80);
+}
+
+
+ul.planning {
+  list-style: none;
+  color: $white;
+  background-color: rgb(43,72,88);
+  padding: 0 1.5rem;
+  max-width: 250px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-family: $font-family-sans-serif;
+
+
+  li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.3;
+    padding: .7rem 0;
+    border-bottom: 1px solid $white;
+
+    &.last {
+      border: 0;
+    }
+  }
 }
 
 
@@ -529,4 +560,8 @@
   .section-column {
     display: flex;
   }
+}
+
+.disclosure {
+  top: 100px !important;
 }

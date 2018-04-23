@@ -8,6 +8,7 @@ export default Route.extend({
       page: this.store.findRecord('page', 'ef6c3c8b-d169-4f66-9854-eb87b2fbe873'),
       // articles: this.store.findAll('article'),
       articles: this.store.query('article', {
+        sort: "-date",
         filter:
           {
             'archived':{

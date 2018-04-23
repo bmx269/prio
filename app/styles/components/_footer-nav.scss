@@ -23,45 +23,12 @@ footer {
   }
 
   a {
-    color: $green;
+    color: $body-color;
 
 
     &:hover,
-    &.active {
-      color: $white;
-    }
-  }
-
-  nav {
-    color: $gray-100;
-    font-size: 16px;
-    line-height: 1.25em;
-    margin-bottom: 1.5rem;
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      font-weight: 400;
-      text-transform: none;
-
-      li {
-        margin: 0;
-      }
-
-      a {
-        color: $green;
-        display: block;
-        text-decoration: none;
-        padding: 3px 0;
-        border-bottom: 0;
-
-        &:hover,
-        &.active {
-          text-decoration: none;
-          color: $white;
-        }
-      }
+    &.focus {
+      color: $pink;
     }
   }
 
@@ -88,5 +55,31 @@ footer {
     font-size: $font-size-base;
     line-height: 1rem;
     text-align: center;
+    margin-bottom: .5rem;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+
+  }
+  .social {
+    color: $body-color;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: right;
+    }
+
+    a {
+      color: $gray-500;
+
+
+      &:hover,
+      &.focus {
+        color: $pink;
+      }
+    }
   }
 } // footer
