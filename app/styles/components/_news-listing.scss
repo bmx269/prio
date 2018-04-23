@@ -1,6 +1,8 @@
 .news-list {
-  border-top: 1px $gray-600 solid;
 
+  .container-fluid {
+    border-top: 1px $gray-600 solid;
+  }
   .article {
     border-bottom: 1px $gray-600 solid;
 
