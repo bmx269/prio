@@ -3462,12 +3462,6 @@ ember-hbs-minifier@^0.3.0:
   dependencies:
     object-hash "1.2.0"
 
-ember-ignore-children-helper@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ember-ignore-children-helper/-/ember-ignore-children-helper-1.0.1.tgz#f7c4aa17afb9c5685e1d4dcdb61c7b138ca7cdc3"
-  dependencies:
-    ember-cli-babel "^6.8.2"
-
 ember-in-element-polyfill@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/ember-in-element-polyfill/-/ember-in-element-polyfill-0.1.2.tgz#6a73423869e0f330c40a48d75a71d1c36161cbd6"
@@ -3540,16 +3534,6 @@ ember-metrics@^0.12.1:
     ember-cli-babel "^6.1.0"
     ember-getowner-polyfill "^2.0.0"
     ember-runtime-enumerable-includes-polyfill "^2.0.0"
-
-ember-modal-dialog@^3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/ember-modal-dialog/-/ember-modal-dialog-3.0.0-beta.0.tgz#0d6a566bf5f29fe9923ea3b92107c13c681b61ee"
-  dependencies:
-    ember-cli-babel "^6.12.0"
-    ember-cli-htmlbars "^2.0.1"
-    ember-cli-version-checker "^2.1.0"
-    ember-ignore-children-helper "^1.0.1"
-    ember-wormhole "^0.5.4"
 
 ember-moment@^7.6.0:
   version "7.6.0"

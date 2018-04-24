@@ -14,7 +14,7 @@ module.exports = function(defaults) {
       'importBootstrapCSS': false
     },
     'prember': {
-      // baseRoot: 'http://prio.surge.sh',
+      baseRoot: 'https://priowealth.netlify.com',
       urls: [
         '/',
         '/about',
