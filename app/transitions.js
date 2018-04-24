@@ -75,8 +75,7 @@ export default function(){
       'investment',
       'priority',
       'contact',
-      'news.trending',
-      'news.archive'
+
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -90,7 +89,6 @@ export default function(){
       'investment',
       'news',
       'contact',
-      'priority.video'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -104,7 +102,6 @@ export default function(){
       'investment',
       'news',
       'priority',
-      'contact.form'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
