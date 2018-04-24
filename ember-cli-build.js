@@ -31,7 +31,8 @@ module.exports = function(defaults) {
         '/priority',
         '/priority/video',
         '/contact',
-        "/disclosure"
+        '/contact/form',
+        '/disclosure'
       ]
     }
   });
