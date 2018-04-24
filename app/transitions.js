@@ -22,8 +22,7 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact',
-      'disclosure'
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -36,8 +35,7 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact',
-      'disclosure'
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -50,8 +48,7 @@ export default function(){
       'investment',
       'priority',
       'news',
-      'contact',
-      'disclosure'
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -63,8 +60,7 @@ export default function(){
       'financial-life',
       'priority',
       'news',
-      'contact',
-      'disclosure'
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -78,8 +74,7 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'contact',
-      'disclosure'
+      'contact'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -92,8 +87,20 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'contact',
-      'disclosure'
+      'contact'
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
+  this.transition(
+    this.fromRoute('contact'),
+    this.toRoute([
+      'about',
+      'financial-life',
+      'investment',
+      'news',
+      'priority'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
