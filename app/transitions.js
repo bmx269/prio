@@ -111,7 +111,8 @@ export default function(){
       'news.trending',
       'news.archive',
       'news.post',
-      'disclosure'
+      'disclosure',
+      'contact.form'
     ]),
     this.use('toUp', { duration }),
   );

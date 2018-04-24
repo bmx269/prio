@@ -101,6 +101,16 @@
     position: relative;
   }
 
+  &.contact {
+      @extend .col-12;
+      @extend .col-sm-5;
+      @extend .col-md-2;
+      @extend .col-lg-2;
+      @extend .col-xl-2;
+      @extend .order-1;
+      @extend .order-md-2;
+  }
+
   ul {
     display: inline-block;
     list-style: none;

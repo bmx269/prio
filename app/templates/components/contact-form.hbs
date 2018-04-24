@@ -1,38 +1,56 @@
-<div class="outer">
-    {{angled-divider}}
-  <div class="content-wrapper}">
-    <div class="container-fluid">
-      <div class='row'>
-        {{#validated-form
-          model        = (changeset model UserValidations)
-          on-submit    = submitContact
-          as |f|}}
-
-          {{f.input label="Subject" name="title"}}
-           {{!-- {{f.input
-            type     = "select"
-            label    = "Inquiry Type"
-            name     = "messageType"
-            options  = messageTypes
-            value    =
-          }} --}}
-          {{f.input label="First name" name="firstName"}}
-          {{f.input label="Last name" name="lastName"}}
-          {{f.input type="textarea" label="About me" name="aboutMe"}}
-
-          {{!-- {{f.input
-            type     = "select"
-            label    = "Estimated Project Budget"
-            name     = "budget"
-            options  = budgets
-            value    = model.budget
-            }} --}}
-
-          {{f.input type="textarea" label="Message" name="messageBody"}}
-
-          {{f.submit label="Save"}}
-        {{/validated-form}}
+<form name="contact" class="col-12 col-md-8" method="POST" netlify>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="form-group">
+        <label for="firstnameInput">First Name</label>
+        <input type="text" class="form-control" placeholder="First name" id="firstnameInput" name="firstname">
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="form-group">
+        <label for="lasttnameInput">Last Name</label>
+        <input type="text" class="form-control" placeholder="Last name" id="lastnameInput" name="lastname">
       </div>
     </div>
   </div>
-</div>
+  <div class="form-group">
+    <label for="emailInput">Email</label>
+    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" name="email">
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="form-group">
+        <label for="phoneInput">Phone</label>
+        <input type="text" class="form-control" placeholder="XXX-XXX-XXXX" id="phoneInput" name="fphone">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="subjectInput">Subject</label>
+        <input type="text" class="form-control" placeholder="" id="subjectInput" name="subject">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="messageInput">Message</label>
+        <textarea class="form-control" placeholder="" id="messageInput" name="message" rows="3">
+          </textarea>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div data-netlify-recaptcha></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button type="submit" class="btn btn-pink">Submit</button>
+    </div>
+  </div>
+</form>
+

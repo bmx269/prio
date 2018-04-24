@@ -53,7 +53,9 @@ Router.map(function() {
     this.route('archive');
     this.route('post', { path: '/news/:article_id' });
   });
-  this.route('contact');
+  this.route('contact', function() {
+    this.route('form');
+  });
   this.route('disclosure');
 
   this.route('loading');
