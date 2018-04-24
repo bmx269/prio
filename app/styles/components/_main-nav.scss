@@ -101,15 +101,6 @@
     position: relative;
   }
 
-  &.contact {
-      @extend .col-12;
-      @extend .col-sm-5;
-      @extend .col-md-2;
-      @extend .col-lg-2;
-      @extend .col-xl-2;
-      @extend .order-1;
-      @extend .order-md-2;
-  }
 
   ul {
     display: inline-block;
@@ -148,6 +139,21 @@
           background-image: url('/img/down-arrow.svg');
         }
       }
+    }
+  }
+  &.about {
+    // .arrow-up {
+    //   @include media-breakpoint-up(sm) {
+    //     margin: 40px 40px;
+    //   }
+    // }
+    .arrow-down {
+      background-image: url('/img/down-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/down-arrow-about.svg');
+      }
+
     }
   }
 }

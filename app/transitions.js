@@ -74,7 +74,9 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'contact'
+      'contact',
+      'news.trending',
+      'news.archive'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -87,7 +89,8 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'contact'
+      'contact',
+      'priority.video'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -100,7 +103,8 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'priority'
+      'priority',
+      'contact.form'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
@@ -111,15 +115,14 @@ export default function(){
       'about.your-team',
       'about.our-story',
       'about.how-different',
-      'about.member',
       'financial-life.clarity',
       'investment.management',
-      'priority.video',
       'news.trending',
       'news.archive',
       'news.post',
+      'contact.form',
+      'priority.video',
       'disclosure',
-      'contact.form'
     ]),
     this.use('toUp', { duration }),
   );
@@ -162,6 +165,16 @@ export default function(){
       'about.how-different'
     ]),
     this.use('toDown', { duration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.your-team'
+    ]),
+    this.toRoute([
+      'about.member'
+    ]),
+    this.use('toUp', { duration }),
   );
 
   this.transition(
