@@ -4,7 +4,14 @@ import RSVP from 'rsvp';
 export default Route.extend({
 
   model() {
-    return this.store.findRecord('page', '870716c3-1d83-49c7-94cb-5e114342e6bb');
+    return RSVP.hash({
+      page: this.store.findRecord('page', '870716c3-1d83-49c7-94cb-5e114342e6bb'),
+    });
   },
+
+  setupController(controller, models) {
+    controller.set('page', models.page);
+    controller.set('team', models.team);
+  }
 
 });

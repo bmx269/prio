@@ -38,7 +38,6 @@ Router.map(function() {
     this.route('your-team');
     this.route('member',{ path: '/your-team/:team_id' });
   });
-  this.route('snapshot', { path: '/snapshot/:snap_id' });
   this.route('priority', function() {
     this.route('video');
   });

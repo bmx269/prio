@@ -2,13 +2,15 @@
     <div class="bread-nav">
         <div class="container-fluid">
           <div class='row'>
-          {{#link-to 'about.how-different' class='col text-right'}}How We're Different <i class="fas fa-caret-circle-down"></i>{{/link-to}}
+          {{#link-to 'about.how-different' class='col text-right'}}How We're Different&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
       </div>
     </div>
   </div>
-  {{#each model.section as |section|}}
+  {{#each page.section as |section|}}
     {{page-section section=section selectSnapshot=(action 'selectSnapshot')}}
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
-{{snap-display snap=selectedSnapshot snaps=snapshots}}
+{{#with (filter-by "displayOn" "our-story" snapshots) as |snaps|}}
+  {{snap-display snap=selectedSnapshot snaps=snaps}}
+{{/with}}

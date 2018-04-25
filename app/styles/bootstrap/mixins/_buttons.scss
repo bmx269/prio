@@ -9,7 +9,7 @@
   border-color: $border;
   font-size: 1.5rem;
   @include box-shadow($btn-box-shadow);
-  margin: calc($padding-y * .5) 0;
+  margin: 1rem 0;
 
   &:hover {
     @include color-yiq($background);

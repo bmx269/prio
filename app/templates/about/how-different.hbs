@@ -2,8 +2,8 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'about.our-story' class='col text-left'}}<i class="fas fa-caret-circle-up"></i> Our Story{{/link-to}}
-        {{#link-to 'about.your-team' class='col text-right'}}Meet Your Team <i class="fas fa-caret-circle-down"></i>{{/link-to}}
+        {{#link-to 'about.our-story' class='col text-left'}}<i class="fas fa-caret-circle-up"></i>&nbsp;Our Story{{/link-to}}
+        {{#link-to 'about.your-team' class='col text-right'}}Meet Your Team&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
       </div>
     </div>
   </div>
@@ -12,4 +12,6 @@
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
-{{snap-display snap=selectedSnapshot snaps=snapshots}}
+{{#with (filter-by "displayOn" "how-different" snapshots) as |snaps|}}
+  {{snap-display snap=selectedSnapshot snaps=snaps}}
+{{/with}}

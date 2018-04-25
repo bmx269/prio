@@ -1,9 +1,4 @@
 export default function(){
-  // this.transition(
-  //   this.toRoute(['*']),
-  //   this.use('toLeft'),
-  //   this.reverse('toRight')
-  // );
 
   const duration = 800;
 
@@ -75,11 +70,26 @@ export default function(){
       'investment',
       'priority',
       'contact',
-
+      'news.trending',
+      'news.archive'
     ]),
     this.use('toUp', { duration }),
     this.reverse('toDown')
   );
+
+  this.transition(
+    this.fromRoute('news'),
+    this.toRoute([
+      'about',
+      'financial-life',
+      'investment',
+      'priority',
+      'contact',
+    ]),
+    this.use('toUp', { duration }),
+    this.reverse('toDown')
+  );
+
 
   this.transition(
     this.fromRoute('priority'),
@@ -114,9 +124,9 @@ export default function(){
       'about.how-different',
       'financial-life.clarity',
       'investment.management',
+      'news.post',
       'news.trending',
       'news.archive',
-      'news.post',
       'contact.form',
       'priority.video',
       'disclosure',
@@ -183,6 +193,25 @@ export default function(){
     ]),
     this.use('toDown', { duration }),
   );
+  this.transition(
+    this.fromRoute([
+      'news.trending'
+    ]),
+    this.toRoute([
+      'news.archive'
+    ]),
+    this.use('toDown', { duration }),
+  );
+  this.transition(
+    this.fromRoute([
+      'news.archive'
+    ]),
+    this.toRoute([
+      'news.trending'
+    ]),
+    this.use('toDown', { duration }),
+  );
+
   // this.transition(
   //   this.fromRoute('home'),
   //   this.toRoute(['about.your-team','about.our-story','about.how-different']),

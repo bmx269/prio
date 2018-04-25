@@ -4,4 +4,6 @@
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
-{{snap-display snap=selectedSnapshot snaps=snapshots}}
+{{#with (filter-by "displayOn" "clarity" snapshots) as |snaps|}}
+  {{snap-display snap=selectedSnapshot snaps=snaps}}
+{{/with}}
