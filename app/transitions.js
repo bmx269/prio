@@ -1,12 +1,12 @@
 export default function(){
 
-  const duration = 800;
+  const customDuration = 800;
 
   this.transition(
     this.toRoute(
       'index'
     ),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
 
   this.transition(
@@ -19,7 +19,7 @@ export default function(){
       'news',
       'contact'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -32,7 +32,7 @@ export default function(){
       'news',
       'contact'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -45,7 +45,7 @@ export default function(){
       'news',
       'contact'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
   this.transition(
@@ -57,7 +57,7 @@ export default function(){
       'news',
       'contact'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -73,7 +73,7 @@ export default function(){
       'news.trending',
       'news.archive'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -86,7 +86,7 @@ export default function(){
       'priority',
       'contact',
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -100,7 +100,7 @@ export default function(){
       'news',
       'contact',
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -113,7 +113,7 @@ export default function(){
       'news',
       'priority',
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
 
@@ -131,7 +131,7 @@ export default function(){
       'priority.video',
       'disclosure',
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
   );
 
   this.transition(
@@ -141,7 +141,7 @@ export default function(){
     this.toRoute([
       'about.how-different'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
   );
 
   this.transition(
@@ -151,7 +151,7 @@ export default function(){
     this.toRoute([
       'about.our-story'
     ]),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
 
   this.transition(
@@ -161,7 +161,7 @@ export default function(){
     this.toRoute([
       'about.your-team'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
   );
 
   this.transition(
@@ -171,7 +171,7 @@ export default function(){
     this.toRoute([
       'about.how-different'
     ]),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
 
   this.transition(
@@ -181,7 +181,7 @@ export default function(){
     this.toRoute([
       'about.member'
     ]),
-    this.use('toUp', { duration }),
+    this.use('toUp', { duration: customDuration }),
   );
 
   this.transition(
@@ -191,7 +191,7 @@ export default function(){
     this.toRoute([
       'about.your-team'
     ]),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
   this.transition(
     this.fromRoute([
@@ -200,7 +200,7 @@ export default function(){
     this.toRoute([
       'news.archive'
     ]),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
   this.transition(
     this.fromRoute([
@@ -209,7 +209,7 @@ export default function(){
     this.toRoute([
       'news.trending'
     ]),
-    this.use('toDown', { duration }),
+    this.use('toDown', { duration: customDuration }),
   );
 
   // this.transition(
