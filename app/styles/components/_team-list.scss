@@ -108,7 +108,7 @@
 
   .profile {
     .image {
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
 
       img {
         display: block;
@@ -125,7 +125,7 @@
         font-size: 1.8rem;
         font-weight: 500;
         color: $blue;
-        margin-bottom: 0;
+        margin: 0;
       }
       .title {
         font-size: 1.2rem;
@@ -150,7 +150,7 @@
   }
 
   .team-list {
-    margin-bottom: 3rem;
+    margin: 4rem 0 3rem;
 
     a {
       color: $body-color;
