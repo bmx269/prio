@@ -11,7 +11,6 @@ export default Route.extend({
 
   setupController(controller, models) {
     controller.set('page', models.page);
-    controller.set('team', models.team);
   }
 
 });

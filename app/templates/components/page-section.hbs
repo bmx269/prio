@@ -11,14 +11,14 @@
             {{#each column.element as |element|}}
 
               {{#if element.body }}
-                <div class='element-text col'>
+                <div class='element-text'>
                   <div class='inner'>
                     {{html-safe element.body.processed}}
                   </div>
                 </div>
 
               {{else if element.snapshot}}
-                <div class='element-snapshots col'>
+                <div class='element-snapshots'>
                   <div class='inner'>
                     {{#each element.snapshot as |snap|}}
                       <div class="snapshot teaser">
@@ -48,7 +48,7 @@
                 </div>
 
               {{else if element.listingType}}
-                <div class='element-listing col'>
+                <div class='element-listing'>
                   <div class='inner'>
 
                     {{#if (eq element.listingType "articles")}}
@@ -66,7 +66,7 @@
                 </div>
 
               {{else if element.accitem}}
-                <div class='element-accordion col'>
+                <div class='element-accordion'>
                   <div class='inner'>
                     {{#bs-accordion as |acc|}}
                       {{#each element.accitem as |accordion|}}
@@ -83,13 +83,13 @@
                   </div>
                 </div>
               {{else if element.image }}
-                <div class='element-image col'>
+                <div class='element-image'>
                   <div class='inner'>
                   <img src='{{element.image.url}}' alt='{{element.image.meta.alt}}' class="img-fluid">
                   </div>
                 </div>
               {{else if element.slide}}
-              <div class='slideshow col'>
+              <div class='slideshow'>
                 <div class='inner'>
                   {{#swiper-container
                     class="item-carousel"
