@@ -24,11 +24,12 @@
             padding-top: 125px;
 
             @include media-breakpoint-up(sm) {
+              min-height: 650px;
               height: calc(100vh);
             }
 
             @include media-breakpoint-up(lg) {
-              min-height: 450px;
+              min-height: 750px;
               height: calc(100vh);
             }
           }
@@ -491,6 +492,7 @@ ul.planning {
   color: $white;
 
   .logos {
+
   }
 
   .link {
