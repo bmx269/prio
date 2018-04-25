@@ -6,6 +6,12 @@
   .article {
     border-bottom: 1px $gray-600 solid;
 
+    .date {
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      font-family: $font-family-sans-serif;
+    }
+
     .image {
       border-bottom: 8px $teal solid;
       min-height: 200px;

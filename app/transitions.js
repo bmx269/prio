@@ -8,7 +8,7 @@ export default function(){
     ),
     this.use('toDown', { duration: customDuration }),
   );
-
+  
   this.transition(
     this.fromRoute('index'),
     this.toRoute([
@@ -69,27 +69,11 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'contact',
-      'news.trending',
-      'news.archive'
+      'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
   );
-
-  this.transition(
-    this.fromRoute('news'),
-    this.toRoute([
-      'about',
-      'financial-life',
-      'investment',
-      'priority',
-      'contact',
-    ]),
-    this.use('toUp', { duration: customDuration }),
-    this.reverse('toDown')
-  );
-
 
   this.transition(
     this.fromRoute('priority'),
@@ -98,7 +82,7 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'contact',
+      'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
@@ -111,7 +95,7 @@ export default function(){
       'financial-life',
       'investment',
       'news',
-      'priority',
+      'priority'
     ]),
     this.use('toUp', { duration: customDuration }),
     this.reverse('toDown')
@@ -122,6 +106,7 @@ export default function(){
       'about.your-team',
       'about.our-story',
       'about.how-different',
+      'about.member',
       'financial-life.clarity',
       'investment.management',
       'news.post',
@@ -129,19 +114,9 @@ export default function(){
       'news.archive',
       'contact.form',
       'priority.video',
-      'disclosure',
+      'disclosure'
     ]),
-    this.use('toUp', { duration: customDuration }),
-  );
-
-  this.transition(
-    this.fromRoute([
-      'about.our-story'
-    ]),
-    this.toRoute([
-      'about.how-different'
-    ]),
-    this.use('toUp', { duration: customDuration }),
+    this.use('toUp'),
   );
 
   this.transition(
@@ -156,32 +131,12 @@ export default function(){
 
   this.transition(
     this.fromRoute([
-      'about.how-different'
-    ]),
-    this.toRoute([
-      'about.your-team'
-    ]),
-    this.use('toUp', { duration: customDuration }),
-  );
-
-  this.transition(
-    this.fromRoute([
       'about.your-team'
     ]),
     this.toRoute([
       'about.how-different'
     ]),
     this.use('toDown', { duration: customDuration }),
-  );
-
-  this.transition(
-    this.fromRoute([
-      'about.your-team'
-    ]),
-    this.toRoute([
-      'about.member'
-    ]),
-    this.use('toUp', { duration: customDuration }),
   );
 
   this.transition(
@@ -193,6 +148,7 @@ export default function(){
     ]),
     this.use('toDown', { duration: customDuration }),
   );
+
   this.transition(
     this.fromRoute([
       'news.trending'
@@ -202,6 +158,7 @@ export default function(){
     ]),
     this.use('toDown', { duration: customDuration }),
   );
+
   this.transition(
     this.fromRoute([
       'news.archive'
@@ -212,12 +169,6 @@ export default function(){
     this.use('toDown', { duration: customDuration }),
   );
 
-  // this.transition(
-  //   this.fromRoute('home'),
-  //   this.toRoute(['about.your-team','about.our-story','about.how-different']),
-  //   this.use('toUp', { duration }),
-  //   this.reverse('toDown')
-  // );
 }
 
 

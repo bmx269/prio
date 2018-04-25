@@ -9,8 +9,10 @@
             </div>
             <div class="teaser py-3 col-12 col-md-8 col-lg-9">
               <div class="title">
-                  {{moment article.date 'MM-DD-YYYY'}}
-                  <h2>{{article.title}}</h2>
+                <div class="date">
+                  {{moment-format article.date 'MMMM D, YYYY'}}
+                </div>
+                <h2>{{article.title}}</h2>
               </div>
               <div class="intro">
                 {{html-safe article.intro.value}}
