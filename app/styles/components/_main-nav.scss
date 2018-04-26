@@ -143,18 +143,99 @@
   }
   &.about {
     // .arrow-up {
-    //   @include media-breakpoint-up(sm) {
-    //     margin: 40px 40px;
-    //   }
+    //   background-image: url('/img/up-arrow.svg');
+
+      // @include media-breakpoint-up(sm) {
+      //   background-image: url('/img/up-arrow-magenta.svg');
+      // }
     // }
     .arrow-down {
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-about.svg');
+        background-image: url('/img/down-arrow-magenta.svg');
       }
-
     }
+  }
+  &.financial-life {
+    .arrow-up {
+      background-image: url('/img/up-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/up-arrow-teal.svg');
+      }
+    }
+    .arrow-down {
+      background-image: url('/img/down-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/down-arrow-teal.svg');
+      }
+    }
+  }
+  &.investment {
+    .arrow-up {
+      background-image: url('/img/up-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/up-arrow-green.svg');
+      }
+    }
+    .arrow-down {
+      background-image: url('/img/down-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/down-arrow-green.svg');
+      }
+    }
+  }
+  &.news {
+    .arrow-up {
+      background-image: url('/img/up-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/up-arrow-blue.svg');
+      }
+    }
+    .arrow-down {
+      background-image: url('/img/down-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/down-arrow-blue.svg');
+      }
+    }
+  }
+  &.priority {
+    .arrow-up {
+      background-image: url('/img/up-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/up-arrow-gray.svg');
+      }
+    }
+    .arrow-down {
+      background-image: url('/img/down-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/down-arrow-gray.svg');
+      }
+    }
+  }
+  &.contact {
+    .arrow-up {
+      background-image: url('/img/up-arrow.svg');
+
+      @include media-breakpoint-up(sm) {
+        background-image: url('/img/up-arrow-magenta.svg');
+      }
+    }
+    // .arrow-down {
+    //   background-image: url('/img/down-arrow.svg');
+
+    //   @include media-breakpoint-up(sm) {
+    //     background-image: url('/img/down-arrow-teal.svg');
+    //   }
+    // }
   }
 }
 
