@@ -1,7 +1,17 @@
 {{!-- General --}}
-<title>Prio Wealth Management</title>
-<meta name="description" content="Prio Wealth is an independent investment management firm headquartered in Boston, Massachusetts. Our experienced portfolio managers work directly with individuals, families, endowment and foundations to 
+{{#if model.title}}
+  <title>{{model.title}}</title>
+{{else}}
+  <title>Prio Wealth Management</title>
+{{/if}}
+
+{{#if model.description}}
+  <meta name="description" content={{model.description}}>
+{{else}}
+  <meta name="description" content="Prio Wealth is an independent investment management firm headquartered in Boston, Massachusetts. Our experienced portfolio managers work directly with individuals, families, endowment and foundations to
 provide customized investment strategies.">
+{{/if}}
+
 <meta name="referrer" content="unsafe-url">
 {{!-- 	  
 <link rel="canonical" href="http://www.seawardmgmt.com/">

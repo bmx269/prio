@@ -15,9 +15,11 @@
             <div class="col-12 order-2 order-md-1 col-md-6 mt-4 mt-md-0">
               <form class="cd-form floating-labels" name="contact" netlify-honeypot="bot-field"
                 {{action (route-action 'sendContactRequest' model) on="submit"}} netlify>
-                  <div class="col-12 bot-field">
-                    <label>Don’t fill this out if you're human:
-                      <input name="bot-field"></label>
+                  <div class="row">
+                    <div class="col-12 d-none bot-field">
+                      <label>Don’t fill this out if you're human:
+                        <input name="bot-field"></label>
+                    </div>
                   </div>
                   <div class="row">
                     <div class="col-12 col-md-6">

@@ -7,7 +7,7 @@ import fetch from 'fetch';
 
 export default Route.extend({
   flashMessages: service(),
-  // headData: service(),
+  headData: service(),
 
   model() {
     // return this.store.findAll('contact');
@@ -25,17 +25,15 @@ export default Route.extend({
 
   },
 
-  // afterModel() {
-  //   return setProperties(this.headData, {
-  //     title: 'Contact Us - Ship Shape',
-  //     description:
-  //     'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +
-  //     'open source work, and anything and everything Ember. To get started on your Ember training or Ember consulting project, ' +
-  //     'shoot us an email or fill out the contact form.',
-  //     type: 'website',
-  //     url: 'https://shipshape.io/contact/'
-  //   });
-  // },
+  afterModel() {
+    return setProperties(this.headData, {
+      title: 'Contact Us - Prio Wealth Management',
+      // description:
+      // '',
+      // type: 'website',
+      url: 'https://priowealth.com/contact/form'
+    });
+  },
 
   actions: {
     sendContactRequest(contact) {
