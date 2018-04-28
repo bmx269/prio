@@ -20,7 +20,7 @@ module.exports = function(defaults) {
       'importBootstrapCSS': false
     },
     'prember': {
-      baseRoot: 'https://priowealth.netlify.com',
+      baseRoot: 'https://priowealth.com',
       urls: [
         '/',
         '/about',
@@ -37,6 +37,7 @@ module.exports = function(defaults) {
         '/priority',
         '/priority/video',
         '/contact',
+        '/contact/form',
         '/disclosure'
       ]
     }
