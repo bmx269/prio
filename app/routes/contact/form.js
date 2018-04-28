@@ -30,7 +30,7 @@ export default Route.extend({
       title: 'Contact Us - Prio Wealth Management',
       // description:
       // '',
-      // type: 'website',
+      type: 'website',
       url: 'https://priowealth.com/contact/form'
     });
   },
