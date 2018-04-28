@@ -37,7 +37,6 @@ module.exports = function(defaults) {
         '/priority',
         '/priority/video',
         '/contact',
-        '/contact/form',
         '/disclosure'
       ]
     }
