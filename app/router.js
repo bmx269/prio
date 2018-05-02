@@ -34,6 +34,7 @@ Router.map(function() {
   this.route('index', { path: '/' });
   this.route('about', function() {
     this.route('our-story');
+    this.route('your-priority');
     this.route('how-different');
     this.route('your-team');
     this.route('member',{ path: '/your-team/:team_id' });

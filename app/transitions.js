@@ -8,7 +8,7 @@ export default function(){
     ),
     this.use('toDown', { duration: customDuration }),
   );
-  
+
   this.transition(
     this.fromRoute('index'),
     this.toRoute([
@@ -103,9 +103,10 @@ export default function(){
 
   this.transition(
     this.toRoute([
-      'about.your-team',
       'about.our-story',
+      'about.your-priority',
       'about.how-different',
+      'about.your-team',
       'about.member',
       'financial-life.clarity',
       'investment.management',
@@ -121,10 +122,20 @@ export default function(){
 
   this.transition(
     this.fromRoute([
-      'about.how-different'
+      'about.your-priority'
     ]),
     this.toRoute([
       'about.our-story'
+    ]),
+    this.use('toDown', { duration: customDuration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'about.how-different'
+    ]),
+    this.toRoute([
+      'about.your-priority'
     ]),
     this.use('toDown', { duration: customDuration }),
   );
