@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain /:splat
+https://seawardmgmt.com/* https://priowealth.com/ 301!
