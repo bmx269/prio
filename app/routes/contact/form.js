@@ -1,9 +1,9 @@
-import contactValidations from "../../validations/contact";
-import Route from '@ember/routing/route';
-import EmberObject, { get, setProperties } from '@ember/object';
 import { getOwner } from '@ember/application';
+import EmberObject, { get, setProperties } from '@ember/object';
+import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 import fetch from 'fetch';
+import contactValidations from "../../validations/contact";
 
 export default Route.extend({
   flashMessages: service(),
