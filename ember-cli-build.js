@@ -19,6 +19,9 @@ module.exports = function(defaults) {
       'importBootstrapFont': false,
       'importBootstrapCSS': false
     },
+    'ember-cli-babel': {
+      includePolyfill: true
+    },
     'prember': {
       baseRoot: 'https://priowealth.com',
       urls: [
