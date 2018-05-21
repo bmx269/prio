@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'prio',
     environment,
     rootURL: '/',
-    host: 'https://live-prio-api.pantheonsite.io/', //drupal
+    host: 'https://dev-prio-api.pantheonsite.io/', //drupal
     namespace: 'api',
     locationType: 'router-scroll',
     historySupportMiddleware: true,
