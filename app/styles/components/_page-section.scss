@@ -322,7 +322,45 @@
 
 .slideover {
   position: relative;
-  margin-top: calc(-100vh + 100px);
+  margin-top: calc(-100vh - 250px);
+
+  @media screen and ( min-height: 400px ){
+    margin-top: calc(-100vh - 220px);
+  }
+
+  @media screen and ( min-height: 450px ){
+    margin-top: calc(-100vh - 160px);
+  }
+  @media screen and ( min-height: 500px ){
+    margin-top: calc(-100vh - 110px);
+  }
+
+  @media screen and ( min-height: 550px ){
+    margin-top: calc(-100vh - 80px);
+  }
+
+  @media screen and ( min-height: 600px ){
+    margin-top: calc(-100vh - 40px);
+  }
+  @media screen and ( min-height: 630px ){
+    margin-top: calc(-100vh - 20px);
+  }
+
+  @media screen and ( min-height: 650px ){
+    margin-top: calc(-100vh);
+  }
+  @media screen and ( min-height: 680px ){
+    margin-top: calc(-100vh + 40px);
+  }
+  @media screen and ( min-height: 700px ){
+    margin-top: calc(-100vh + 60px);
+  }
+  @media screen and ( min-height: 730px ){
+    margin-top: calc(-100vh + 80px);
+  }
+  @media screen and ( min-height: 750px ){
+    margin-top: calc(-100vh + 100px);
+  }
 
   &.disclosure {
     margin-top: 0;
@@ -346,7 +384,7 @@
   }
 }
 
-.liquid-container, 
+.liquid-container,
 .liquid-child {
   width: 100%;
   height: 100%;
