@@ -48,7 +48,7 @@
     "ember-cp-validations": "^3.5.3",
     "ember-data": "~3.1.0",
     "ember-export-application-global": "^2.0.0",
-    "ember-fetch": "^3.4.5",
+    "ember-fetch": "^4.0.2",
     "ember-hammertime": "^1.5.0",
     "ember-hbs-minifier": "^0.3.0",
     "ember-href-to": "^1.15.1",
@@ -58,7 +58,7 @@
     "ember-moment": "^7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-route-action-helper": "2.0.6",
-    "ember-router-scroll": "^0.6.0",
+    "ember-router-scroll": "^0.7.0",
     "ember-scroll-to": "^0.6.4",
     "ember-source": "~3.1.0",
     "ember-sticky-element": "^0.2.0",
@@ -68,12 +68,12 @@
     "loader.js": "^4.2.3",
     "prember": "^0.4.0-alpha.0",
     "prember-middleware": "^0.1.0",
-    "prember-sitemap-generator": "^0.0.2"
+    "prember-sitemap-generator": "^0.0.3"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "dependencies": {
-    "npm": "^5.8.0"
+    "npm": "^6.1.0"
   }
 }
