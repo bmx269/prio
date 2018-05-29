@@ -1,5 +1,7 @@
 # prio
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bmx269/prio.svg?token=720fe52ae21c5b57c8a771cfbfc72eef43b3f2e03650ad1e7a322e3084f1fe19&ts=1527580492212)](https://greenkeeper.io/)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
