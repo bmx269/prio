@@ -322,44 +322,44 @@
 
 .slideover {
   position: relative;
-  margin-top: calc(-100vh - 250px);
+  margin-top: calc(-100vh + 100px);
 
   @media screen and ( min-height: 400px ){
-    margin-top: calc(-100vh - 220px);
+    // margin-top: calc(-100vh - 220px);
   }
 
   @media screen and ( min-height: 450px ){
-    margin-top: calc(-100vh - 160px);
+    // margin-top: calc(-100vh - 160px);
   }
   @media screen and ( min-height: 500px ){
-    margin-top: calc(-100vh - 110px);
+    // margin-top: calc(-100vh - 110px);
   }
 
   @media screen and ( min-height: 550px ){
-    margin-top: calc(-100vh - 80px);
+    // margin-top: calc(-100vh - 80px);
   }
 
   @media screen and ( min-height: 600px ){
-    margin-top: calc(-100vh - 40px);
+    // margin-top: calc(-100vh - 40px);
   }
   @media screen and ( min-height: 630px ){
-    margin-top: calc(-100vh - 20px);
+    // margin-top: calc(-100vh - 20px);
   }
 
   @media screen and ( min-height: 650px ){
-    margin-top: calc(-100vh);
+    // margin-top: calc(-100vh);
   }
   @media screen and ( min-height: 680px ){
-    margin-top: calc(-100vh + 40px);
+    // margin-top: calc(-100vh + 40px);
   }
   @media screen and ( min-height: 700px ){
-    margin-top: calc(-100vh + 60px);
+    //margin-top: calc(-100vh + 60px);
   }
   @media screen and ( min-height: 730px ){
-    margin-top: calc(-100vh + 80px);
+    // margin-top: calc(-100vh + 80px);
   }
   @media screen and ( min-height: 750px ){
-    margin-top: calc(-100vh + 100px);
+    // margin-top: calc(-100vh + 100px);
   }
 
   &.disclosure {
