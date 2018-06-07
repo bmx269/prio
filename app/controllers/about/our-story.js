@@ -8,7 +8,7 @@ export default Controller.extend({
   },
 
   snapshotsAsArray: computed('snapshots.[]', function(){
-    return this.get('snapshots').toArray();
+    return this.snapshots.toArray();
   }),
 
   actions: {
