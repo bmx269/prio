@@ -7,7 +7,6 @@ export default Route.extend({
     return RSVP.hash({
       pages: this.store.findAll('page'),
       sections: this.store.findAll('section'),
-      columns: this.store.findAll('column'),
       texts: this.store.findAll('text'),
     });
   },
@@ -15,7 +14,6 @@ export default Route.extend({
   setupController(controller, models) {
     controller.set('pages', models.pages);
     controller.set('sections', models.sections);
-    controller.set('columns', models.columns);
     controller.set('texts', models.texts);
   }
 });
