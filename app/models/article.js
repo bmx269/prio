@@ -12,4 +12,5 @@ export default DS.Model.extend({
   useDownload: DS.attr('boolean'),
   archived: DS.attr('boolean'),
   file: DS.belongsTo('file', { async: true }),
+  thumbnail: DS.belongsTo('file', { async: true })
 });
