@@ -5,7 +5,8 @@
         {{#each (sort-by "date:desc" articles) as |article|}}
           <div class="article row">
             <div class="image text-center d-flex align-items-center justify-content-center col-12 col-md-4 col-lg-3">
-              <img src="{{article.thumbnail.url}}" class="img-fluid">
+              <div class="img"></div>
+              {{!-- <img src="{{article.thumbnail.url}}" class="img-fluid"> --}}
             </div>
             <div class="teaser py-3 col-12 col-md-8 col-lg-9">
               <div class="title">
@@ -18,10 +19,12 @@
                 {{html-safe article.intro.value}}
                 {{#if article.useDownload}}
                   <a href="{{article.file.url}}" target="_blank" class="more">{{article.downloadLinkText}}</a>
-                {{else if article.articleUrl}}
-                  <a href="{{article.articleUr}}" target="_blank" class="more">More</a>
                 {{else}}
-                  {{#link-to "connections.in-the-news.post" article.id class="more"}}More{{/link-to}}
+                  {{#if article.articleUrl}}
+                    <a href="{{article.articleUrl}}" target="_blank" class="more">More</a>
+                  {{else}}
+                    {{#link-to "connections.in-the-news.post" article.id class="more"}}More{{/link-to}}
+                  {{/if}}
                 {{/if}}
               </div>
             </div>

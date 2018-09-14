@@ -16,6 +16,13 @@
     .image {
       border-bottom: 8px $teal solid;
       min-height: 200px;
+
+      .img {
+        background: url("/img/Prio-icon-256.png") center center no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+      }
     }
 
     .more {
