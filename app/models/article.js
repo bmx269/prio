@@ -9,7 +9,6 @@ export default DS.Model.extend({
   body: DS.attr(''),
   slug: DS.attr('string'),
   articleUrl: DS.attr('string'),
-  downloadLinkText: DS.attr('string'),
   useDownload: DS.attr('boolean'),
   archived: DS.attr('boolean'),
   file: DS.belongsTo('file', { async: true }),

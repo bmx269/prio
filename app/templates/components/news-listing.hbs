@@ -18,12 +18,12 @@
               <div class="intro">
                 {{html-safe article.intro.value}}
                 {{#if article.useDownload}}
-                  <a href="{{article.file.url}}" target="_blank" class="more">{{article.downloadLinkText}}</a>
+                  <a href="{{article.file.url}}" target="_blank" class="more">Download PDF</a>
                 {{else}}
                   {{#if article.articleUrl}}
-                    <a href="{{article.articleUrl}}" target="_blank" class="more">More</a>
+                    <a href="{{article.articleUrl}}" target="_blank" class="more">Visit Site</a>
                   {{else}}
-                    {{#link-to "connections.in-the-news.post" article.id class="more"}}More{{/link-to}}
+                    {{#link-to "connections.in-the-news.post" article.id class="more"}}Read More{{/link-to}}
                   {{/if}}
                 {{/if}}
               </div>
