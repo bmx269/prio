@@ -47,10 +47,15 @@ Router.map(function() {
   this.route('investment', function() {
     this.route('management');
   });
-  this.route('news', function() {
-    this.route('trending');
-    this.route('archive');
-    this.route('post', { path: '/news/:article_id' });
+  this.route('connections', function() {
+    this.route('in-the-news', function() {
+      this.route('archive');
+      this.route('post', { path: ':article_id' });
+    });
+    this.route('blog', function() {
+      this.route('post', { path: ':blog_id' });
+    });
+    this.route('investment-updates');
   });
   this.route('contact', function() {
     this.route('form');

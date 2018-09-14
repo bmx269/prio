@@ -2,13 +2,13 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'news.trending' class='btn btn-outline-primary'}}Trending News{{/link-to}}
+        {{#link-to 'connections.in-the-news' class='col text-right'}}Prio In the News&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
       </div>
     </div>
   </div>
   {{#each page.section as |section|}}
     {{page-section section=section}}
   {{/each}}
-  {{article-archive articles=articles}}
+  {{blog-listing blogs=blogs}}
   {{liquid-outlet enableGrowth=false}}
 </div>

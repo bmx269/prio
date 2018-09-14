@@ -16,7 +16,7 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'news',
+      'connections',
       'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -29,7 +29,7 @@ export default function(){
       'financial-life',
       'investment',
       'priority',
-      'news',
+      'connections',
       'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -42,7 +42,7 @@ export default function(){
       'about',
       'investment',
       'priority',
-      'news',
+      'connections',
       'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -54,7 +54,7 @@ export default function(){
       'about',
       'financial-life',
       'priority',
-      'news',
+      'connections',
       'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -63,7 +63,7 @@ export default function(){
 
 
   this.transition(
-    this.fromRoute('news'),
+    this.fromRoute('connections'),
     this.toRoute([
       'about',
       'financial-life',
@@ -81,7 +81,7 @@ export default function(){
       'about',
       'financial-life',
       'investment',
-      'news',
+      'connections',
       'contact'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -94,7 +94,7 @@ export default function(){
       'about',
       'financial-life',
       'investment',
-      'news',
+      'connections',
       'priority'
     ]),
     this.use('toUp', { duration: customDuration }),
@@ -110,9 +110,12 @@ export default function(){
       'about.member',
       'financial-life.clarity',
       'investment.management',
-      'news.post',
-      'news.trending',
-      'news.archive',
+      'connections.blog',
+      'connections.blog.post',
+      'connections.in-the-news.post',
+      'connections.in-the-news',
+      'connections.in-the-news.archive',
+      'connections.investment-updates',
       'contact.form',
       'priority.video',
       'disclosure'
@@ -162,24 +165,33 @@ export default function(){
 
   this.transition(
     this.fromRoute([
-      'news.trending'
+      'connections.in-the-news'
     ]),
     this.toRoute([
-      'news.archive'
+      'connections.blog'
     ]),
     this.use('toDown', { duration: customDuration }),
   );
 
   this.transition(
     this.fromRoute([
-      'news.archive'
+      'connections.in-the-news.archive'
     ]),
     this.toRoute([
-      'news.trending'
+      'connections.in-the-news'
     ]),
     this.use('toDown', { duration: customDuration }),
   );
 
+  this.transition(
+    this.fromRoute([
+      'connections.investment-updates'
+    ]),
+    this.toRoute([
+      'connections.in-the-news'
+    ]),
+    this.use('toDown', { duration: customDuration }),
+  );
 }
 
 
