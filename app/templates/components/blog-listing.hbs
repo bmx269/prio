@@ -16,11 +16,11 @@
                 <div class="date">
                   {{moment-format blog.date 'MMMM D, YYYY'}}
                 </div>
-                <h2>{{blog.title}}</h2>
+                {{#link-to "connections.blogpost" blog.id class="h2"}}{{blog.title}}{{/link-to}}
               </div>
               <div class="intro">
                 {{html-safe blog.intro.value}}
-                {{#link-to "connections.blog.post" blog.id class="more"}}Read More{{/link-to}}
+                {{#link-to "connections.blogpost" blog.id class="more"}}Read More{{/link-to}}
               </div>
             </div>
           </div>

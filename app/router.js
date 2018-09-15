@@ -48,13 +48,11 @@ Router.map(function() {
     this.route('management');
   });
   this.route('connections', function() {
-    this.route('in-the-news', function() {
-      this.route('archive');
-      this.route('post', { path: ':article_id' });
-    });
-    this.route('blog', function() {
-      this.route('post', { path: ':blog_id' });
-    });
+    this.route('in-the-news');
+    this.route('archive', { path: '/in-the-new/archive' });
+    this.route('post', { path: '/in-the-new/:article_id' });
+    this.route('blog');
+    this.route('blogpost', { path: '/blog/:blog_id' });
     this.route('investment-updates');
   });
   this.route('contact', function() {

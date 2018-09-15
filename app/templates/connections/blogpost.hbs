@@ -1,15 +1,22 @@
 <div class="overlay-container">
-  <div class="article-post">
+  <div class="bread-nav">
+    <div class="container-fluid">
+      <div class='row'>
+        {{#link-to 'connections.blog' class='col text-left'}}<i class="fas fa-caret-circle-up"></i> Prio Blog{{/link-to}}
+      </div>
+    </div>
+  </div>
+  <div class="blog-post">
     <div class="outer">
       <div class="content-wrapper">
         <div class="container-fluid">
           <div class='row'>
             <div class='col-12'>
               <div class="title">
-                <h1>{{article.title}}</h1>
+                <h1>{{blog.title}}</h1>
               </div>
               <div class="body">
-                {{html-safe article.body.value}}
+                {{html-safe blog.body.value}}
               </div>
             </div>
           </div>

@@ -111,10 +111,10 @@ export default function(){
       'financial-life.clarity',
       'investment.management',
       'connections.blog',
-      'connections.blog.post',
-      'connections.in-the-news.post',
+      'connections.blogpost',
+      'connections.post',
       'connections.in-the-news',
-      'connections.in-the-news.archive',
+      'connections.archive',
       'connections.investment-updates',
       'contact.form',
       'priority.video',
@@ -175,7 +175,17 @@ export default function(){
 
   this.transition(
     this.fromRoute([
-      'connections.in-the-news.archive'
+      'connections.blogpost'
+    ]),
+    this.toRoute([
+      'connections.blog'
+    ]),
+    this.use('toDown', { duration: customDuration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'connections.archive'
     ]),
     this.toRoute([
       'connections.in-the-news'
