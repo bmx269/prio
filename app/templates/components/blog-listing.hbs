@@ -6,12 +6,12 @@
           <div class="col-md-8">
             {{#each (take 1 (sort-by "date:desc" blogs)) as |blog|}}
               <div class="article d-flex large mb-3 {{if blog.thumbnail ' background-image'}}" style="{{blog.thumbnail.inlineBackground}}">
-                <div class="teaser align-self-end p-3">
+                <div class="teaser align-self-end py-1 px-3">
                   <div class="title">
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h2"}}{{blog.title}}{{/link-to}}
+                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
                   </div>
                 </div>
               </div>
@@ -20,12 +20,12 @@
           <div class="col-md-4">
             {{#each (drop 0 (take 2 (sort-by "date:desc" blogs))) as |blog|}}
               <div class="article d-flex mb-3 {{if blog.thumbnail ' background-image'}}" style="{{blog.thumbnail.inlineBackground}}">
-                <div class="teaser align-self-end p-3">
+                <div class="teaser align-self-end py-1 px-3">
                   <div class="title">
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h2"}}{{blog.title}}{{/link-to}}
+                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
                   </div>
                 </div>
               </div>
@@ -36,12 +36,12 @@
           {{#each (drop 0 (sort-by "date:desc" blogs)) as |blog|}}
             <div class="col-md-4">
               <div class="article d-flex mb-3 {{if blog.thumbnail ' background-image'}}" style="{{blog.thumbnail.inlineBackground}}">
-                <div class="teaser align-self-end p-3">
+                <div class="teaser align-self-end py-1 px-3">
                   <div class="title">
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h2"}}{{blog.title}}{{/link-to}}
+                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
                   </div>
                 </div>
               </div>
