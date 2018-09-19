@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'prio',
     environment,
     rootURL: '/',
-    host: 'https://prio.smallrobot.co', //drupal
+    host: 'https://api.priowealth.com', //drupal
     namespace: 'api',
     locationType: 'router-scroll',
     historySupportMiddleware: true,
