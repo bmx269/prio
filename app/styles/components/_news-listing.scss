@@ -41,7 +41,15 @@
     border-top: 1px $gray-600 solid;
   }
   .article {
-    background: $gray-100;
+    background-color: $gray-100;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+
+    &.large {
+      min-height: 430px;
+    }
 
     .date {
       text-transform: uppercase;
