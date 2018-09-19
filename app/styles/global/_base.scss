@@ -32,6 +32,11 @@ body {
 }
 .row {
   @include make-row();
+
+  &:before,
+  &:after {
+    display: inline-block;
+  }
 }
 
 
