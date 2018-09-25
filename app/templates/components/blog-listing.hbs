@@ -18,7 +18,7 @@
             {{/each}}
           </div>
           <div class="col-md-4">
-            {{#each (drop 0 (take 2 (sort-by "date:desc" blogs))) as |blog|}}
+            {{#each (drop 1 (take 2 (sort-by "date:desc" blogs))) as |blog|}}
               <div class="article d-flex mb-3 {{if blog.thumbnail ' background-image'}}" style="{{blog.thumbnail.inlineBackground}}">
                 <div class="teaser align-self-end py-1 px-3">
                   <div class="title">
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="row">
-          {{#each (drop 0 (sort-by "date:desc" blogs)) as |blog|}}
+          {{#each (drop 3 (sort-by "date:desc" blogs)) as |blog|}}
             <div class="col-md-4">
               <div class="article d-flex mb-3 {{if blog.thumbnail ' background-image'}}" style="{{blog.thumbnail.inlineBackground}}">
                 <div class="teaser align-self-end py-1 px-3">
