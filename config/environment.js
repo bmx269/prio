@@ -41,6 +41,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    fastboot: {
+      hostWhitelist: ['priowealth.com', /^localhost:\d+$/],
+      // EXPERIMENTAL_RENDER_MODE_SERIALIZE: true
     }
   };
 
