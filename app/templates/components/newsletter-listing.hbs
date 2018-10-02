@@ -1,0 +1,20 @@
+<div class="newsletter-list">
+  <div class="outer">
+    <div class="content-wrapper">
+      <div class="container-fluid">
+        {{#each (sort-by "date:desc" newsletters) as |newsletter|}}
+          <div class="newsletter row">
+            <div class="teaser py-1 col-12 col-md-12 col-lg-12">
+              <div class="title">
+                <div class="date">
+                  {{moment-format newsletter.date 'MMMM D, YYYY'}}
+                </div>
+                <a href="{{newsletter.file.url}}" target="_blank" class="newsletter-item">{{newsletter.title}}</a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
