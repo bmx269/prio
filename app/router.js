@@ -53,7 +53,7 @@ Router.map(function() {
     this.route('post', { path: '/in-the-new/:article_id' });
     this.route('blog');
     this.route('blogpost', { path: '/blog/:blog_id' });
-    this.route('investment-updates');
+    this.route('investment-updates', { path: '/investment-outlook' });
   });
   this.route('contact', function() {
     this.route('form');
