@@ -10,6 +10,7 @@ export default DS.Model.extend({
   professionalTitle: DS.attr('string'),
   email: DS.attr('string'),
   linkedin: DS.attr('string'),
+  dashedTitle: DS.attr('string'),
   body: DS.attr(''),
   image: DS.belongsTo('file', { async: true }),
   thumbnail: DS.belongsTo('file', { async: true }),

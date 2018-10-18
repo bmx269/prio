@@ -20,7 +20,7 @@
               <div class='team-list d-none d-sm-block'>
                 {{#each (sort-by "lastName" team) as |profile|}}
                   <div class="member">
-                    {{#link-to "about.member" profile.id class="full-name"}}
+                    {{#link-to "about.member" profile.dashedTitle class="full-name"}}
                       {{profile.firstName}} {{#if profile.middleInitial}} {{profile.middleInitial}}{{/if}} {{profile.lastName}}
                     {{/link-to}}
                   </div>

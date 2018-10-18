@@ -3,12 +3,20 @@ import RouterScroll from 'ember-router-scroll';
 import config from './config/environment';
 import { inject } from '@ember/service';
 import { scheduleOnce } from '@ember/runloop';
+import { setupRouter, reset } from 'ember-app-scheduler';
 
 const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,
   headData: inject(),
   rootURL: config.rootURL,
   metrics: inject(),
+
+  init() {
+    this._super(...arguments);
+
+    setupRouter(this);
+  },
+
 
   // setTitle(title) {
   //   this.get('headData').set('title', title);
@@ -36,7 +44,7 @@ Router.map(function() {
     this.route('your-priority');
     this.route('how-different');
     this.route('your-team');
-    this.route('member',{ path: '/your-team/:team_id' });
+    this.route('member',{ path: '/your-team/:team_dashedTitle' });
   });
   this.route('priority', function() {
     this.route('video');
