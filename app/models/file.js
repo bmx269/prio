@@ -10,9 +10,9 @@ export default DS.Model.extend({
   image: DS.hasMany('image', {inverse: 'image', async: true }),
   thumbnail: DS.hasMany('image', {inverse: 'thumbnail', async: false }),
 
-  fullUrl: computed('uri', function() {
+  fullUrl: computed('url', function() {
     const host = ENV.host;
-    let url = this.uri;
+    let url = this.url;
     return `${host}`+`${url}`;
   }),
   inlineBackground: computed('fullUrl', function () {
