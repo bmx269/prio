@@ -6,7 +6,7 @@
           <div class="article row">
             <div class="image text-center d-flex align-items-center justify-content-center col-12 col-md-4 col-lg-3">
               {{#if article.thumbnail}}
-                <img src="{{article.thumbnail.url}}" class="img-fluid">
+                <img src="{{article.thumbnail.fullUrl}}" class="img-fluid">
               {{else}}
                 <div class="img"></div>
               {{/if}}
@@ -21,7 +21,7 @@
               <div class="intro">
                 {{html-safe article.intro.value}}
                 {{#if article.useDownload}}
-                  <a href="{{article.file.url}}" target="_blank" class="more">Download PDF</a>
+                  <a href="{{article.file.fullUrl}}" target="_blank" class="more">Download PDF</a>
                 {{else}}
                   {{#if article.articleUrl}}
                     <a href="{{article.articleUrl}}" target="_blank" class="more">Visit Site</a>
