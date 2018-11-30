@@ -15,6 +15,7 @@ export default JSONAPIAdapter.extend(AdapterFetch, {
     const options = this._super(...arguments) || {};
     options.headers = options.headers || {};
     options.headers['Content-Type'] = 'application/vnd.api+json';
+    options.headers['Accept'] = 'application/vnd.api+json';
     return options;
   }
 });
