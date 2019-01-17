@@ -3,7 +3,7 @@
     <div class="content-wrapper">
       <div class="container-fluid">
         <div class='row'>
-          {{#each (sort-by "lastName" team) as |profile|}}
+          {{#each (sort-by "order" team) as |profile|}}
             <div class='profile'>
               {{#link-to "about.member" profile.dashedTitle class="full-name"}}
                 <div class='image text-center' style="{{profile.image.inlineBackground}}">

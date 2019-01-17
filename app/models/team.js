@@ -11,6 +11,7 @@ export default DS.Model.extend({
   email: DS.attr('string'),
   linkedin: DS.attr('string'),
   dashedTitle: DS.attr('string'),
+  order: DS.attr('number'),
   body: DS.attr(''),
   image: DS.belongsTo('file', { async: true }),
   thumbnail: DS.belongsTo('file', { async: true }),
