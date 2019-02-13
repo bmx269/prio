@@ -1,24 +1,48 @@
-  <section class="page-section bluepopup">
-    <div class="outer d-flex align-items-center justify-content-center">       
-      <div class="content-wrapper">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="section-column align-items-center justify-content-center">
-              <div class="element-text">
-                <div class="inner text-center">
-                  <div class='logos col-12'>
-                    <img src='/img/landing-page.png' alt='Seward Management is now Prio Wealth'>
+
+{{#each page.section as |section|}}
+  {{#if section.show}}
+  <section class="page-section">
+    <div class="outer d-flex {{section.background}} {{section.heroSize}}{{if section.isHero ' hero-active'}}{{if section.divider ' divided'}}{{if section.backgroundImage ' background-image'}}" style="{{section.backgroundImage.inlineBackground}}">
+      <div class='overlay {{section.overlay}}'>
+        <div class="content-wrapper">
+          <div class="container-fluid">
+            <div class='row {{section.colVerticalAlignment}} {{section.colHorizontalAlignment}} {{if section.reverse 'flex-sm-row-reverse'}}'>
+
+            {{#each section.column as |column|}}
+              <div class='section-column {{column.columnWidthXs}} {{column.columnWidthSm}} {{column.columnWidthMd}} {{column.columnWidthLg}} {{column.columnWidthXl}} {{column.alignment}} {{column.css}}'>
+
+              {{#each column.element as |element|}}
+
+                {{#if element.body }}
+                  <div class='element-text col'>
+                    <div class='inner'>
+                      {{html-safe element.body.processed}}
+                    </div>
                   </div>
-                  <div class='link col-12'>
-                    {{#link-to 'about'}}What are your priorities?&nbsp;&nbsp;<span>Enter</span>&nbsp;<i class="fas fa-arrow-right"></i>{{/link-to}}
-                  </div>
-                </div>
+
+                {{/if}}
+              {{/each}}
+
               </div>
+            {{/each}}
+
             </div>
           </div>
         </div>
       </div>
+      <div class='arrow-nav about'>
+        <ul>
+          <li>
+          {{#link-to "financial-life" class="arrow-down"}}Financial Life Management{{/link-to}}
+          </li>
+        </ul>
+    </div>
     </div>
   </section>
+  {{/if}}
+{{/each}}
 
+<div class="slideover">
+  {{liquid-outlet enableGrowth=false}}
+</div>
 
