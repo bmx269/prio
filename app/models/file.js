@@ -6,15 +6,15 @@ import ENV from '../config/environment';
 export default DS.Model.extend({
   filename: DS.attr('string'),
   uri: DS.attr('string'),
-  image: DS.hasMany('image', {inverse: 'image', async: true }),
-  thumbnail: DS.hasMany('image', {inverse: 'thumbnail', async: false }),
+  image: DS.hasMany('image', {inverse: 'image'}),
+  thumbnail: DS.hasMany('image', {inverse: 'thumbnail'}),
 
   fullUrl: computed('uri', function() {
     const host = ENV.host;
-    let url = this.url;
+    let url = this.uri;
     return `${host}`+`${url}`;
   }),
   inlineBackground: computed('fullUrl', function () {
-    return new htmlSafe( "background-image: url('" + this.fullUrl + "')" );
+    return new htmlSafe( 'background-image: url("' + this.fullUrl + '");' );
   })
 });
