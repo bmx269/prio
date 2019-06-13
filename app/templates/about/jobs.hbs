@@ -1,0 +1,13 @@
+<div class="overlay-container">
+  <div class="bread-nav">
+    <div class="container-fluid">
+      <div class='row'>
+        {{#link-to 'about.your-team' class='col text-left'}}<i class="fas fa-caret-circle-up"></i>&nbsp;Meet Your Team{{/link-to}}
+      </div>
+    </div>
+  </div>
+  {{#each page.section as |section|}}
+    {{page-section section=section}}
+  {{/each}}
+  {{liquid-outlet enableGrowth=false}}
+</div>

@@ -108,6 +108,7 @@ export default function(){
       'about.how-different',
       'about.your-team',
       'about.member',
+      'about.jobs',
       'financial-life.clarity',
       'investment.management',
       'connections.blog',
@@ -116,6 +117,7 @@ export default function(){
       'connections.in-the-news',
       'connections.archive',
       'connections.investment-updates',
+      'connections.prio-cares',
       'contact.form',
       'priority.video',
       'disclosure'
@@ -165,6 +167,16 @@ export default function(){
 
   this.transition(
     this.fromRoute([
+      'about.jobs'
+    ]),
+    this.toRoute([
+      'about.your-team'
+    ]),
+    this.use('toDown', { duration: customDuration }),
+  );
+
+  this.transition(
+    this.fromRoute([
       'connections.in-the-news'
     ]),
     this.toRoute([
@@ -199,6 +211,16 @@ export default function(){
     ]),
     this.toRoute([
       'connections.in-the-news'
+    ]),
+    this.use('toDown', { duration: customDuration }),
+  );
+
+  this.transition(
+    this.fromRoute([
+      'connections.prio-cares'
+    ]),
+    this.toRoute([
+      'connections.investment-updates'
     ]),
     this.use('toDown', { duration: customDuration }),
   );

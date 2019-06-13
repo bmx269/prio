@@ -45,6 +45,7 @@ Router.map(function() {
     this.route('how-different');
     this.route('your-team');
     this.route('member',{ path: '/your-team/:team_dashedTitle' });
+    this.route('jobs');
   });
   this.route('priority', function() {
     this.route('video');
@@ -62,6 +63,7 @@ Router.map(function() {
     this.route('blog');
     this.route('blogpost', { path: '/blog/:blog_id' });
     this.route('investment-updates', { path: '/investment-outlook' });
+    this.route('prio-cares');
   });
   this.route('contact', function() {
     this.route('form');
