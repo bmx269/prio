@@ -64,7 +64,7 @@
     "ember-source": "~3.1.0",
     "ember-sticky-element": "^0.2.0",
     "ember-truth-helpers": "^2.0.0",
-    "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-ember": "^6.7.1",
     "liquid-fire": "^0.29.5",
     "loader.js": "^4.2.3",
     "prember": "^1.0.3",
