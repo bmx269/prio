@@ -4474,10 +4474,10 @@ ember-app-scheduler@^0.2.0:
   dependencies:
     ember-cli-babel "^6.3.0"
 
-ember-app-scheduler@^1.0.4:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-1.0.8.tgz#37adacce2fa5ab59324e2c0b08f3c4a3568025b4"
-  integrity sha512-fYCOhQTLb1b+TZ2PBSqyvHXVAxf7qfWD0ZSJTd/IdU/xbLJSt34X75w7qK2uBHZCkVvCNm/ATW3pjFC/0zYk7A==
+ember-app-scheduler@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-2.0.1.tgz#0758cbd4d4a0f9b72b6e82ad53fe188663ebce12"
+  integrity sha512-2q3dI1cB3KMhkaPAYm1mkt+AjLGDK/J6XVIwgYEHrfze8MIGahIPu0Q/K7MfuloSwj4wDnOUUeT2phegDJ2AFg==
   dependencies:
     "@types/ember" "^3.1.0"
     "@types/rsvp" "^4.0.2"
