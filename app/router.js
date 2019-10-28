@@ -45,7 +45,7 @@ Router.map(function() {
     this.route('how-different');
     this.route('your-team');
     this.route('member',{ path: '/your-team/:team_dashedTitle' });
-    this.route('jobs');
+    this.route('jobs',{ path: '/careers' });
   });
   this.route('priority', function() {
     this.route('video');
