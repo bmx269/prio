@@ -1,8 +1,8 @@
-import DS from 'ember-data';
 import AdapterFetch from 'ember-fetch/mixins/adapter-fetch';
+import JSONAPIAdapter from 'ember-data/adapters/json-api';
 import ENV from '../config/environment';
 
-export default  DS.JSONAPIAdapter.extend(AdapterFetch, {
+export default JSONAPIAdapter.extend(AdapterFetch, {
   host: ENV.host,
   namespace: ENV.namespace,
   // buildURL(record, suffix) {
@@ -13,9 +13,6 @@ export default  DS.JSONAPIAdapter.extend(AdapterFetch, {
   },
   ajaxOptions() {
     const options = this._super(...arguments) || {};
-    options.beforeSend = (xhr) => {
-      xhr.setRequestHeader('Cache-Control',  'max-age=86400');
-    };
     options.headers = options.headers || {};
     options.headers['Content-Type'] = 'application/vnd.api+json';
     options.headers['Accept'] = 'application/vnd.api+json';

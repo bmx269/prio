@@ -121,7 +121,7 @@
     }
 
     &.section-background-blue-grad {
-      @include gradient-directional(rgba($blue, .2), $blue, 135deg);
+      @include gradient-directional(($blue - 20), $blue, 135deg);
     }
 
     &.section-background-green {
