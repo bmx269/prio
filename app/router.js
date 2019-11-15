@@ -62,7 +62,7 @@ Router.map(function() {
     this.route('post', { path: '/in-the-new/:article_id' });
     this.route('blog');
     this.route('blogpost', { path: '/blog/:blog_id' });
-    this.route('investment-updates', { path: '/investment-outlook' });
+    // this.route('investment-updates', { path: '/investment-outlook' });
     this.route('prio-cares');
   });
   this.route('contact', function() {

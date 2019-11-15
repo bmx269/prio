@@ -5,13 +5,13 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      page: this.store.findRecord('page', 'f083f018-8ede-41c1-80d1-5310ce8e2505'),
+      // page: this.store.findRecord('page', 'f083f018-8ede-41c1-80d1-5310ce8e2505'),
       newsletters: this.store.findAll('newsletter'),
     });
   },
 
   setupController(controller, models) {
-    controller.set('page', models.page);
+    // controller.set('page', models.page);
     controller.set('newsletters', models.newsletters);
   }
 });
