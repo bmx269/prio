@@ -72,9 +72,9 @@ $grays: (
   900: $gray-900
 ) !default;
 
-$blue-gray: rgb(30,76,101);
-$blue:      #0092a8;
-$blue-dark: rgb(15, 27, 37);
+$blue-gray: #2d637f;
+$blue:      #0192b4;
+$blue-dark: #092a49;
 $indigo:    #6610f2 !default;
 $purple:    #5F4B8B !default;
 $pink:      #994878;
@@ -82,8 +82,10 @@ $red:       #a40e1d;
 $orange:    #fd7e14 !default;
 $yellow:    #ffc107 !default;
 $green:     rgb(156,165,80);
-$teal:      rgb(29,119,136) !default;
+$teal:      #45797b;
 $cyan:      #17a2b8 !default;
+$navy:      #092a49;
+$gold:      #998441;
 
 $colors: (
   blue: $blue,
@@ -98,7 +100,9 @@ $colors: (
   cyan: $cyan,
   white: $white,
   gray: $gray-600,
-  gray-dark: $gray-800
+  gray-dark: $gray-800,
+  gold: $gold,
+  navy: $navy
 ) !default;
 
 $theme-colors: (
@@ -170,9 +174,9 @@ $body-color:    #4F758B;
 //
 // Style anchor elements.
 
-$link-color:            $pink;
+$link-color:            $gold;
 $link-decoration:       none;
-$link-hover-color:      darken($pink, 5%);
+$link-hover-color:     $navy;
 $link-hover-decoration: underline;
 $link-underline:        rgba($gray-600, .3);
 $link-hover-underline:  $gray-600;
@@ -627,7 +631,7 @@ $card-border-radius:       $border-radius !default;
 $card-border-color:        rgba($black,.125) !default;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:              rgba($black, .03) !default;
-$card-bg:                  rgba($blue, 0.6) !default;
+$card-bg:                  rgba($blue-gray, 0.6) !default;
 
 
 $card-img-overlay-padding: 1.25rem !default;
