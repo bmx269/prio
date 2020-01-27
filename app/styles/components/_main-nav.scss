@@ -153,7 +153,7 @@
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-magenta.svg');
+        background-image: url('/img/down-arrow.svg');
       }
     }
   }
@@ -162,14 +162,14 @@
       background-image: url('/img/up-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/up-arrow-teal.svg');
+        background-image: url('/img/up-arrow.svg');
       }
     }
     .arrow-down {
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-teal.svg');
+        background-image: url('/img/down-arrow.svg');
       }
     }
   }
@@ -178,14 +178,14 @@
       background-image: url('/img/up-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/up-arrow-green.svg');
+        background-image: url('/img/up-arrow.svg');
       }
     }
     .arrow-down {
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-green.svg');
+        background-image: url('/img/down-arrow.svg');
       }
     }
   }
@@ -194,14 +194,14 @@
       background-image: url('/img/up-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/up-arrow-blue.svg');
+        background-image: url('/img/up-arrow.svg');
       }
     }
     .arrow-down {
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-blue.svg');
+        background-image: url('/img/down-arrow.svg');
       }
     }
   }
@@ -210,14 +210,14 @@
       background-image: url('/img/up-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/up-arrow-gray.svg');
+        background-image: url('/img/up-arrow.svg');
       }
     }
     .arrow-down {
       background-image: url('/img/down-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/down-arrow-gray.svg');
+        background-image: url('/img/down-arrow.svg');
       }
     }
   }
@@ -226,7 +226,7 @@
       background-image: url('/img/up-arrow.svg');
 
       @include media-breakpoint-up(sm) {
-        background-image: url('/img/up-arrow-magenta.svg');
+        background-image: url('/img/up-arrow.svg');
       }
     }
     // .arrow-down {
