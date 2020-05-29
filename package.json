@@ -27,7 +27,7 @@
     "ember-cli": "~3.1.4",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-autoprefixer": "^0.8.1",
-    "ember-cli-babel": "^6.12.0",
+    "ember-cli-babel": "^7.20.1",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^4.2.3",
     "ember-cli-fastboot": "ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19",
