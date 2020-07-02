@@ -47,13 +47,13 @@
       position: relative;
 
       &.overlay-black {
-        background-color: rgba($black, 0.4);
+        background-color: rgba(#000, 0.7);
       }
       &.overlay-graydark {
-        background-color: rgba($gray-700,.8);
+        background-color: rgba(#000,.7);
       }
       &.overlay-gray {
-        background-color: rgba($gray-500,.8);
+        background-color: rgba($gray-500,.6);
       }
       &.overlay-graylight {
         background-color: rgba($gray-200,.8);
@@ -62,25 +62,34 @@
         background-color: rgba($white, 0.6);
       }
       &.overlay-green {
-        background-color: rgba($green,.8);
+        //background-color: rgba($green,.8);
+        background-color: rgba($gold,.6);
+
       }
       &.overlay-red {
         background-color: rgba($red, 0.5);
       }
       &.overlay-pink {
-        background-color: rgba($pink,.8);
+        background-color: rgba($navy,.7);
       }
       &.overlay-blue {
         background-color: rgba($blue,.8);
       }
       &.overlay-blue-gray {
-        background-color: rgba($blue-gray,.8);
+        background-color: rgba($blue,.6);
       }
       &.overlay-teal {
-        background-color: rgba($teal,.8);
+        background-color: rgba($teal,.7);
       }
       &.overlay-purple {
-        background-color: rgba($purple, 0.6);
+        //background-color: rgba($purple, 0.6);
+        background-color: rgba($navy, 0.6);
+      }
+      &.overlay-navy {
+        background-color: rgba($navy, 0.7);
+      }
+      &.overlay-gold {
+        background-color: rgba($gold, 0.6);
       }
     } //overlay
 
@@ -116,7 +125,16 @@
     }
 
     &.section-background-purple {
-      background-color: $purple;
+      //background-color: $purple;
+      background-color: $navy;
+      color: $gray-100;
+    }
+    &.section-background-navy {
+      background-color: $navy;
+      color: $gray-100;
+    }
+    &.section-background-gold {
+      background-color: $gold;
       color: $gray-100;
     }
 
@@ -130,7 +148,8 @@
     }
 
     &.section-background-pink {
-      background-color: $pink;
+      //background-color: $pink;
+      background-color: $navy;
       color: $gray-100;
     }
 
@@ -414,9 +433,10 @@
     color: $white;
     margin-bottom: 1rem;
     font-size: (1.8rem * .9);
+    font-weight: 600;
 
     @include media-breakpoint-up(md) {
-      font-size: 1.8rem;
+      font-size: 2.3rem;
     }
   }
 
@@ -442,15 +462,15 @@
 
 }
 .firm .element-text {
-  background-color: rgb(74,146,160);
+  background-color: $teal;
 }
 
 .approach .element-text {
-  background-color: rgb(30,76,101);
+  background-color: $navy;
 }
 
 .results .element-text {
-  background-color: rgb(156,165,80);
+  background-color: $gold;
 }
 
 
@@ -505,6 +525,7 @@ ul.planning {
       a {
         display: inline-block;
         width: calc(100% - 40px);
+        color: $blue;
 
         &:hover,
         &:focus {

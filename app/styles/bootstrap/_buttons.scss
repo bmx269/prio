@@ -141,3 +141,21 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+.btn-gold {
+  background-color: $gold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  font-size: .95rem;
+
+  @include hover {
+    border-color: transparent;
+  }
+  @include hover-focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: $navy;
+  }
+}
