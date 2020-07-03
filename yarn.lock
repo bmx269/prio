@@ -958,37 +958,6 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@simple-dom/document@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@simple-dom/document/-/document-1.4.0.tgz#af60855f957f284d436983798ef1006cca1a1678"
-  integrity sha512-/RUeVH4kuD3rzo5/91+h4Z1meLSLP66eXqpVAw/4aZmYozkeqUkMprq0znL4psX/adEed5cBgiNJcfMz/eKZLg==
-  dependencies:
-    "@simple-dom/interface" "^1.4.0"
-
-"@simple-dom/interface@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@simple-dom/interface/-/interface-1.4.0.tgz#e8feea579232017f89b0138e2726facda6fbb71f"
-  integrity sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==
-
-"@simple-dom/parser@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@simple-dom/parser/-/parser-1.4.0.tgz#b1fee1a23f48a37d6bdd98f5242db0cab5b67abc"
-  integrity sha512-TNjDkOehueRIKr1df416qk9ELj+qWuVVJNIT25y1aZg3pQvxv4UPGrgaDFte7dsWBTbF3V8NYPNQ5FDUZQ8Wlg==
-  dependencies:
-    "@simple-dom/interface" "^1.4.0"
-
-"@simple-dom/serializer@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@simple-dom/serializer/-/serializer-1.4.0.tgz#98470f357f418d72b1a1ec78d68191e60aefe215"
-  integrity sha512-mI1yRahsVs8atXLiQksineDsFEFqeG7RHwnnBTDOK6inbzl4tZQgjR+Z7edjgIJq5j5RhZvwPI6EuCji9B3eQw==
-  dependencies:
-    "@simple-dom/interface" "^1.4.0"
-
-"@simple-dom/void-map@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@simple-dom/void-map/-/void-map-1.4.0.tgz#f15f07568fe1076740407266aa5e6eac249bc78c"
-  integrity sha512-VDhLEyVCbuhOBBgHol9ShzIv9O8UCzdXeH4FoXu2DOcu/nnvTjLTck+BgXsCLv5ynDiUdoqsREEVFnoyPpFKVw==
-
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -4235,7 +4204,7 @@ cookie-signature@1.0.6:
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
   integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
 
-cookie@0.3.1, cookie@^0.3.1:
+cookie@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
@@ -4574,11 +4543,6 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
-
-denodeify@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/denodeify/-/denodeify-1.2.1.tgz#3a36287f5034e699e7577901052c2e6c94251631"
-  integrity sha1-OjYof1A05pnnV3kBBSwubJQlFjE=
 
 depd@~1.1.2:
   version "1.1.2"
@@ -5014,27 +4978,6 @@ ember-cli-eslint@^4.2.3:
     rsvp "^4.6.1"
     walk-sync "^0.3.0"
 
-ember-cli-fastboot@ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19:
-  version "1.1.4-beta.1"
-  resolved "https://codeload.github.com/ember-fastboot/ember-cli-fastboot/tar.gz/158af9ec00edf58db71524bea04d224705ef5d19"
-  dependencies:
-    broccoli-concat "^3.2.2"
-    broccoli-funnel "^2.0.0"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-plugin "^1.2.1"
-    chalk "^2.0.1"
-    ember-cli-babel "^6.7.2"
-    ember-cli-lodash-subset "2.0.1"
-    ember-cli-preprocess-registry "^3.1.0"
-    ember-cli-version-checker "^2.1.0"
-    fastboot "^1.1.4-beta.1"
-    fastboot-express-middleware "^1.1.0"
-    fastboot-transform "^0.1.2"
-    fs-extra "^4.0.2"
-    json-stable-stringify "^1.0.1"
-    md5-hex "^2.0.0"
-    silent-error "^1.0.0"
-
 ember-cli-flash@^1.6.3:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.8.1.tgz#2836adc9a2d075769cc0aad14b313c23358284c0"
@@ -5057,7 +5000,7 @@ ember-cli-head@^0.4.1:
     ember-cli-babel "^6.11.0"
     ember-cli-htmlbars "^2.0.3"
 
-ember-cli-htmlbars-inline-precompile@^1.0.0, ember-cli-htmlbars-inline-precompile@^1.0.2:
+ember-cli-htmlbars-inline-precompile@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars-inline-precompile/-/ember-cli-htmlbars-inline-precompile-1.0.5.tgz#312e050c9e3dd301c55fb399fd706296cd0b1d6a"
   integrity sha512-/CNEqPxroIcbY6qejrt704ZaghHLCntZKYLizFfJ2esirXoJx6fuYKBY1YyJ8GOgjfbHHKjBZuK4vFFJpkGqkQ==
@@ -5106,7 +5049,7 @@ ember-cli-is-package-missing@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-is-package-missing/-/ember-cli-is-package-missing-1.0.0.tgz#6e6184cafb92635dd93ca6c946b104292d4e3390"
   integrity sha1-bmGEyvuSY13ZPKbJRrEEKS1OM5A=
 
-ember-cli-lodash-subset@2.0.1, ember-cli-lodash-subset@^2.0.1:
+ember-cli-lodash-subset@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-2.0.1.tgz#20cb68a790fe0fde2488ddfd8efbb7df6fe766f2"
   integrity sha1-IMtop5D+D94kiN39jvu332/nZvI=
@@ -6353,7 +6296,7 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express@^4.10.7, express@^4.12.3, express@^4.16.2:
+express@^4.10.7, express@^4.12.3:
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.17.1.tgz#4491fc38605cf51f8629d39c2b5d026f98a4c134"
   integrity sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g==
@@ -6527,36 +6470,13 @@ fast-sourcemap-concat@^1.4.0:
     source-map-url "^0.3.0"
     sourcemap-validator "^1.1.0"
 
-fastboot-express-middleware@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/fastboot-express-middleware/-/fastboot-express-middleware-1.2.0.tgz#3f32fb21d8d01ad7c0c7d876b278601665ea17fa"
-  integrity sha1-PzL7IdjQGtfAx9h2snhgFmXqF/o=
-  dependencies:
-    chalk "^2.0.1"
-    fastboot "^1.2.0"
-    request "^2.81.0"
-
-fastboot-transform@^0.1.0, fastboot-transform@^0.1.2:
+fastboot-transform@^0.1.0:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/fastboot-transform/-/fastboot-transform-0.1.3.tgz#7dea0b117594afd8772baa6c9b0919644e7f7dcd"
   integrity sha512-6otygPIJw1ARp1jJb+6KVO56iKBjhO+5x59RSC9qiZTbZRrv+HZAuP00KD3s+nWMvcFDemtdkugki9DNFTTwCQ==
   dependencies:
     broccoli-stew "^1.5.0"
     convert-source-map "^1.5.1"
-
-fastboot@^1.1.3, fastboot@^1.1.4-beta.1, fastboot@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.2.1.tgz#71e91151293be814b2f9c41fe7513bf4e9b6ef91"
-  integrity sha512-WK5Jy71Q6FPoGkooEnWt7Yc2vb23f6C2RtBUutO459TskFnUhzOF8ZJASNNjURQYq8U/pTha2LI4Ix7UInffgg==
-  dependencies:
-    chalk "^2.0.1"
-    cookie "^0.3.1"
-    debug "^3.0.0"
-    exists-sync "0.0.4"
-    najax "^1.0.2"
-    rsvp "^4.7.0"
-    simple-dom "^1.0.0"
-    source-map-support "^0.5.0"
 
 fastq@^1.6.0:
   version "1.8.0"
@@ -9774,7 +9694,7 @@ mute-stream@0.0.8, mute-stream@~0.0.4:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-najax@^1.0.2, najax@^1.0.3:
+najax@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/najax/-/najax-1.0.4.tgz#63fd8dbf15d18f24dc895b3a16fec66c136b8084"
   integrity sha512-wsSacA+RkgY1wxRxXCT3tdqzmamEv9PLeoV/ub9SlLf2RngbPMSqc3A7H35XJDfURC0twMmZsnPdsYPkuuFSVg==
@@ -11117,40 +11037,6 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prember-middleware@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/prember-middleware/-/prember-middleware-0.1.0.tgz#00314e6fe869fdb0b3c4ca7099f7f03315d66b9b"
-  integrity sha512-FdrEB7y0HFhSPfb1iXrRCZNWrx5TasRQ1U1wFsp2al9u+BlBVjHr9/EEmg9eIctWJqct3Zhdbk9aqzAvuPDWSA==
-  dependencies:
-    chalk "^2.3.0"
-    clean-base-url "^1.0.0"
-    ember-cli-babel "^6.6.0"
-    prember "*"
-
-prember-sitemap-generator@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/prember-sitemap-generator/-/prember-sitemap-generator-0.0.2.tgz#88060a11b11af5b32e38d03c298d308634373971"
-  integrity sha512-/WnsTswDvGItvnZMnAslK+HVajXojuan3ET1l1xNi2DucttG1y+WlkOD2mtspIZbpMxZPicsUnLGW1Ns1HK3QQ==
-  dependencies:
-    broccoli-file-creator "^1.1.1"
-    broccoli-funnel "^2.0.1"
-    chalk "^2.3.0"
-
-prember@*, prember@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/prember/-/prember-1.0.4.tgz#1218369e5d3baef0ce1a9f05341476c9ae4b30dc"
-  integrity sha512-eqY65zIimju84/rD4hGtKALtH0vZwc9uhNHO5yHm4QvCUgLdTcB++mplFRUMnfJPnIa3bLUyac2tBTFxYp37WA==
-  dependencies:
-    broccoli-debug "^0.6.3"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-plugin "^1.3.0"
-    chalk "^2.3.0"
-    denodeify "^1.2.1"
-    ember-cli-babel "^6.6.0"
-    express "^4.16.2"
-    fastboot "^1.1.3"
-    mkdirp "^0.5.1"
-
 prepend-http@^1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
@@ -11874,7 +11760,7 @@ request-promise-native@^1.0.5:
     tunnel-agent "^0.6.0"
     uuid "^3.0.0"
 
-request@^2.74.0, request@^2.81.0, request@^2.87.0, request@^2.88.0:
+request@^2.74.0, request@^2.87.0, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
@@ -12399,17 +12285,6 @@ silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0, silent-error@^1.1
   dependencies:
     debug "^2.2.0"
 
-simple-dom@^1.0.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/simple-dom/-/simple-dom-1.4.0.tgz#78ad1f41b8b70d16f82b7e0d458441c9262565b7"
-  integrity sha512-TnBPkmOyjdaOqyBMb4ick+n8c0Xv9Iwg1PykFV7hz9Se3UCiacTbRb+25cPmvozFNJLBUNvUzX/KsPfXF14ivA==
-  dependencies:
-    "@simple-dom/document" "^1.4.0"
-    "@simple-dom/interface" "^1.4.0"
-    "@simple-dom/parser" "^1.4.0"
-    "@simple-dom/serializer" "^1.4.0"
-    "@simple-dom/void-map" "^1.4.0"
-
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -12626,7 +12501,7 @@ source-map-support@^0.4.0, source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.0, source-map-support@~0.5.12:
+source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==

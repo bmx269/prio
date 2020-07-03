@@ -30,11 +30,9 @@
     "ember-cli-babel": "^6.12.0",
     "ember-cli-dependency-checker": "^3.1.0",
     "ember-cli-eslint": "^4.2.3",
-    "ember-cli-fastboot": "ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19",
     "ember-cli-flash": "^1.6.3",
     "ember-cli-head": "^0.4.1",
     "ember-cli-htmlbars": "^3.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-netlify": "^0.3.1",
@@ -66,10 +64,7 @@
     "ember-truth-helpers": "^2.0.0",
     "eslint-plugin-ember": "^5.0.0",
     "liquid-fire": "^0.30.0",
-    "loader.js": "^4.2.3",
-    "prember": "^1.0.3",
-    "prember-middleware": "^0.1.0",
-    "prember-sitemap-generator": "^0.0.2"
+    "loader.js": "^4.2.3"
   },
   "engines": {
     "node": "10.* || >= 12"
