@@ -52,17 +52,17 @@ fieldset[disabled] a.btn {
 // Alternate buttons
 //
 
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include button-variant($value, $value);
-  }
-}
+// @each $color, $value in $theme-colors {
+//   .btn-#{$color} {
+//     @include button-variant($value, $value);
+//   }
+// }
 
-@each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
-    @include button-outline-variant($value, #fff);
-  }
-}
+// @each $color, $value in $theme-colors {
+//   .btn-outline-#{$color} {
+//     @include button-outline-variant($value, #fff);
+//   }
+// }
 
 
 //

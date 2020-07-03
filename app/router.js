@@ -1,8 +1,8 @@
 import EmberRouter from '@ember/routing/router';
-import RouterScroll from 'ember-router-scroll';
+import EmberRouterScroll from 'ember-router-scroll';
 import config from './config/environment';
 import { inject } from '@ember/service';
-import { scheduleOnce } from '@ember/runloop';
+// import { scheduleOnce } from '@ember/runloop';
 // import { setupRouter, reset } from 'ember-app-scheduler';
 
 // const Router = EmberRouter.extend(RouterScroll, {
@@ -37,9 +37,11 @@ import { scheduleOnce } from '@ember/runloop';
 //   }
 // });
 
-export default class Router extends EmberRouter {
+class Router extends EmberRouter {
   location = config.locationType;
   rootURL = config.rootURL;
+  headData = inject();
+  // metrics = inject();
 }
 
 Router.map(function() {
@@ -80,3 +82,5 @@ Router.map(function() {
   this.route('notfound', { path: '/*path' });
 
 });
+
+export default Router;

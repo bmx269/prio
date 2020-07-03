@@ -10,10 +10,10 @@ module.exports = function(defaults) {
     },
     'ember-bootstrap': {
       'importBootstrapCSS': false
-    },
-    'ember-cli-babel': {
-      includePolyfill: true
     } //,
+    // 'ember-cli-babel': {
+    //   includePolyfill: true
+    // } //,
     // 'prember': {
     //   baseRoot: 'https://priowealth.com',
     //   urls: [

@@ -20,23 +20,23 @@ module.exports = function(environment) {
       }
     },
 
-    // metricsAdapters: [
-    //   {
-    //     name: 'GoogleAnalytics',
-    //     environments: ['all'],
-    //     config: {
-    //       id: 'UA-126906827-1',
-    //       // Use `analytics_debug.js` in development
-    //       debug: environment === 'test',
-    //       // Use verbose tracing of GA events
-    //       trace: environment === 'test',
-    //       // Ensure development env hits aren't sent to GA
-    //       sendHitTask: environment !== 'test',
-    //       // Specify Google Analytics plugins
-    //       require: ['']
-    //     }
-    //   }
-    // ],
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['all'],
+        config: {
+          id: 'UA-126906827-1',
+          // Use `analytics_debug.js` in development
+          debug: environment === 'test',
+          // Use verbose tracing of GA events
+          trace: environment === 'test',
+          // Ensure development env hits aren't sent to GA
+          sendHitTask: environment !== 'test',
+          // Specify Google Analytics plugins
+          require: ['']
+        }
+      }
+    ],
 
     APP: {
       // Here you can pass flags/options to your application instance
