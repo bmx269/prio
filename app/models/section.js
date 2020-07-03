@@ -1,18 +1,18 @@
-import DS from 'ember-data';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
-export default DS.Model.extend({
-  created: DS.attr('string'),
-  divider: DS.attr('boolean'),
-  parallax: DS.attr('boolean'),
-  reverse: DS.attr('boolean'),
-  show: DS.attr('boolean'),
-  isHero: DS.attr('boolean'),
-  background: DS.attr('string'),
-  colHorizontalAlignment: DS.attr('string'),
-  colVerticalAlignment: DS.attr('string'),
-  heroSize: DS.attr('string'),
-  overlay: DS.attr('string'),
-  backgroundImage: DS.belongsTo('file', { async: true }),
-  column: DS.hasMany('column', { async: true }),
-  page: DS.belongsTo('page', { async: true }),
+export default Model.extend({
+  created: attr('string'),
+  divider: attr('boolean'),
+  parallax: attr('boolean'),
+  reverse: attr('boolean'),
+  show: attr('boolean'),
+  isHero: attr('boolean'),
+  background: attr('string'),
+  colHorizontalAlignment: attr('string'),
+  colVerticalAlignment: attr('string'),
+  heroSize: attr('string'),
+  overlay: attr('string'),
+  backgroundImage: belongsTo('file', { async: true }),
+  column: hasMany('column', { async: true }),
+  page: belongsTo('page', { async: true }),
 });

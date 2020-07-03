@@ -1,12 +1,12 @@
-import DS from 'ember-data';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
-export default DS.Model.extend({
-  title: DS.attr('string'),
-  created: DS.attr(''),
-  status: DS.attr('boolean'),
-  displayOn: DS.attr('string'),
-  image: DS.belongsTo('file', { async: true }),
-  thumbnail: DS.belongsTo('file', { async: true }),
-  section: DS.hasMany('section', { async: true }),
-  snapshotlisting: DS.belongsTo('snapshotlisting', { async: true })
+export default Model.extend({
+  title: attr('string'),
+  created: attr(''),
+  status: attr('boolean'),
+  displayOn: attr('string'),
+  image: belongsTo('file', { async: true }),
+  thumbnail: belongsTo('file', { async: true }),
+  section: hasMany('section', { async: true }),
+  snapshotlisting: belongsTo('snapshotlisting', { async: true })
 });

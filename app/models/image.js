@@ -1,6 +1,6 @@
-import DS from 'ember-data';
+import Model, { belongsTo } from '@ember-data/model';
 
-export default DS.Model.extend({
-  image: DS.belongsTo('file', { async: true }),
-  element: DS.belongsTo('element', { async: true }),
+export default Model.extend({
+  image: belongsTo('file', { async: true }),
+  element: belongsTo('element', { async: true }),
 });

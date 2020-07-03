@@ -62,7 +62,7 @@
             {{/if}}
           </div>
           {{#each snap.section as |section|}}
-            {{page-section section=section}}
+            <PageSection @section={{section}} />
           {{/each}}
         </div>
       </div>

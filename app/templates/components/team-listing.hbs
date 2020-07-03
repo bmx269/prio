@@ -5,7 +5,7 @@
         <div class='row'>
           {{#each (sort-by "order" team) as |profile|}}
             <div class='profile'>
-              {{#link-to "about.member" profile.dashedTitle class="full-name"}}
+              <LinkTo @route="about.member" @model={{profile.dashedTitle}} class="full-name">
                 <div class='image text-center' style="{{profile.image.inlineBackground}}">
                   <div class='inner'>
                     <div class="name">
@@ -17,7 +17,7 @@
                     </div>
                   </div>
                 </div>
-              {{/link-to}}
+              </LinkTo>
             </div>
           {{/each}}
         </div>

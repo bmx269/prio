@@ -1,8 +1,8 @@
-import DS from 'ember-data';
+import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default DS.Model.extend({
-  title: DS.attr('string'),
-  created: DS.attr(''),
-  body: DS.attr(''),
-  accordion: DS.belongsTo('accordion'),
+export default Model.extend({
+  title: attr('string'),
+  created: attr(''),
+  body: attr(''),
+  accordion: belongsTo('accordion'),
 });

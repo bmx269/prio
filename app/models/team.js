@@ -1,18 +1,18 @@
-import DS from 'ember-data';
+import Model, { attr, belongsTo } from '@ember-data/model';
 
-export default DS.Model.extend({
-  title: DS.attr('string'),
-  created: DS.attr(''),
-  status: DS.attr('boolean'),
-  firstName: DS.attr('string'),
-  lastName: DS.attr('string'),
-  middleInitial: DS.attr('string'),
-  professionalTitle: DS.attr('string'),
-  email: DS.attr('string'),
-  linkedin: DS.attr('string'),
-  dashedTitle: DS.attr('string'),
-  order: DS.attr('number'),
-  body: DS.attr(''),
-  image: DS.belongsTo('file', { async: true }),
-  thumbnail: DS.belongsTo('file', { async: true }),
+export default Model.extend({
+  title: attr('string'),
+  created: attr(''),
+  status: attr('boolean'),
+  firstName: attr('string'),
+  lastName: attr('string'),
+  middleInitial: attr('string'),
+  professionalTitle: attr('string'),
+  email: attr('string'),
+  linkedin: attr('string'),
+  dashedTitle: attr('string'),
+  order: attr('number'),
+  body: attr(''),
+  image: belongsTo('file', { async: true }),
+  thumbnail: belongsTo('file', { async: true }),
 });

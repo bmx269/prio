@@ -1,6 +1,6 @@
-import DS from 'ember-data';
+import Model, { hasMany, belongsTo } from '@ember-data/model';
 
-export default DS.Model.extend({
-  snapshot: DS.hasMany('snapshot', { async: true }),
-  element: DS.belongsTo('element', { async: true })
+export default Model.extend({
+  snapshot: hasMany('snapshot', { async: true }),
+  element: belongsTo('element', { async: true })
 });

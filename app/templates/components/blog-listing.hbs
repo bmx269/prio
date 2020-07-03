@@ -11,7 +11,7 @@
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
+                    <LinkTo @route="connections.blogpost" @model={{blog.id}} class="h3">{{blog.title}}</LinkTo>
                   </div>
                 </div>
               </div>
@@ -25,7 +25,7 @@
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
+                    <LinkTo @route="connections.blogpost" @model={{blog.id}} class="h3">{{blog.title}}</LinkTo>
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@
                     <div class="date">
                       {{moment-format blog.date 'MMMM D, YYYY'}}
                     </div>
-                    {{#link-to "connections.blogpost" blog.id class="h3"}}{{blog.title}}{{/link-to}}
+                    <LinkTo @route="connections.blogpost" @model={{blog.id}} class="h3">{{blog.title}}</LinkTo>
                   </div>
                 </div>
               </div>

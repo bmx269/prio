@@ -1,8 +1,8 @@
 {{#each page.section as |section|}}
-  {{page-section section=section}}
+  <PageSection @section={{section}} />
 {{/each}}
 
-{{global-footer}}
+<GlobalFooter />
 
 <div class="slideover">
   {{liquid-outlet enableGrowth=false}}

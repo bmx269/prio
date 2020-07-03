@@ -23,24 +23,14 @@
                     {{#each element.snapshot as |snap|}}
                       <div class="snapshot teaser">
                         <div class='image'>
-                          {{#scroll-to
-                            href='#snapshot'
-                            duration=1000
-                            easing='linear'
-                            offset=-120
-                            }}
+                          <ScrollTo @href="#snapshot" @duration={{1000}} @easing="linear" @offset={{-120}}>
                             <img src="{{snap.thumbnail.fullUrl}}" class="img-fluid" onclick={{action selectSnapshot snap}}>
-                          {{/scroll-to}}
+                          </ScrollTo>
                         </div>
                         <div class='title'>
-                          {{#scroll-to
-                            href='#snapshot'
-                            duration=1000
-                            easing='linear'
-                            offset=-120
-                            }}
+                          <ScrollTo @href="#snapshot" @duration={{1000}} @easing="linear" @offset={{-120}}>
                           <div onclick={{action selectSnapshot snap}}>{{snap.title}} <span class="readmore">Read More</span></div>
-                          {{/scroll-to}}
+                          </ScrollTo>
                         </div>
                       </div>
                     {{/each}}
@@ -54,7 +44,7 @@
                     {{#if (eq element.listingType "articles")}}
                       {{#if articles}}
                         {{#each (sort-by "created" articles) as |article|}}
-                          {{article-teaser article=article}}
+                          <ArticleTeaser @article={{article}} />
                         {{/each}}
                       {{else}}
                         No Articles
@@ -68,18 +58,18 @@
               {{else if element.accitem}}
                 <div class='element-accordion'>
                   <div class='inner'>
-                    {{#bs-accordion as |acc|}}
+                    <BsAccordion as |acc|>
                       {{#each element.accitem as |accordion|}}
-                        {{#acc.item as |aitem|}}
-                          {{#aitem.title class="accordion-title"}}
+                        <acc.item as |aitem|>
+                          <aitem.title @class="accordion-title">
                             {{accordion.title}}
-                          {{/aitem.title}}
-                          {{#aitem.body}}
+                          </aitem.title>
+                          <aitem.body>
                             {{html-safe accordion.body.processed}}
-                          {{/aitem.body}}
-                        {{/acc.item}}
+                          </aitem.body>
+                        </acc.item>
                       {{/each}}
-                    {{/bs-accordion}}
+                    </BsAccordion>
                   </div>
                 </div>
               {{else if element.image }}
@@ -91,19 +81,9 @@
               {{else if element.slide}}
               <div class='slideshow'>
                 <div class='inner'>
-                  {{#swiper-container
-                    class="item-carousel"
-                    loop=false
-                    div=false
-                    nextButton='.swiper-next'
-                    prevButton='.swiper-prev'
-                    slidesPerView=5
-                    spaceBetween=80
-                    registerAs=itemSwiper
-                    breakpoints=breakpoints
-                    }}
+                  <SwiperContainer @class="item-carousel" @loop={{false}} @div={{false}} @nextButton=".swiper-next" @prevButton=".swiper-prev" @slidesPerView={{5}} @spaceBetween={{80}} @registerAs={{itemSwiper}} @breakpoints={{breakpoints}}>
                     {{#each (shuffle element.slide) as |slide|}}
-                      {{#swiper-slide class="d-flex justify-content-center align-items-center text-center"}}
+                      <SwiperSlide @class="d-flex justify-content-center align-items-center text-center">
                         <div class="slide-inner">
                           {{#if slide.image}}
                             <div class='image'>
@@ -116,9 +96,9 @@
                             </div>
                           {{/if}}
                         </div>
-                      {{/swiper-slide}}
+                      </SwiperSlide>
                     {{/each}}
-                  {{/swiper-container}}
+                  </SwiperContainer>
                   <div class="swiper-next">
                     <svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
                   </div>

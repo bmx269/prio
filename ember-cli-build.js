@@ -9,36 +9,34 @@ module.exports = function(defaults) {
       sourceMap: false
     },
     'ember-bootstrap': {
-      'bootstrapVersion': 4,
-      'importBootstrapFont': false,
       'importBootstrapCSS': false
     },
     'ember-cli-babel': {
       includePolyfill: true
-    },
-    'prember': {
-      baseRoot: 'https://priowealth.com',
-      urls: [
-        '/',
-        '/about',
-        '/about/our-story',
-        '/about/how-different',
-        '/about/your-team',
-        '/financial-life',
-        '/financial-life/clarity',
-        '/investment',
-        '/investment/management',
-        '/connections',
-        '/connections/blog',
-        '/connections/in-the-news',
-        '/connections/investment-updates',
-        '/priority',
-        '/priority/video',
-        '/contact',
-        '/contact/form',
-        '/disclosure'
-      ]
-    }
+    } //,
+    // 'prember': {
+    //   baseRoot: 'https://priowealth.com',
+    //   urls: [
+    //     '/',
+    //     '/about',
+    //     '/about/our-story',
+    //     '/about/how-different',
+    //     '/about/your-team',
+    //     '/financial-life',
+    //     '/financial-life/clarity',
+    //     '/investment',
+    //     '/investment/management',
+    //     '/connections',
+    //     '/connections/blog',
+    //     '/connections/in-the-news',
+    //     '/connections/investment-updates',
+    //     '/priority',
+    //     '/priority/video',
+    //     '/contact',
+    //     '/contact/form',
+    //     '/disclosure'
+    //   ]
+    // }
   });
 
   // Use `app.import` to add additional libraries to the generated

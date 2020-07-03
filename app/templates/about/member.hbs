@@ -3,7 +3,7 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'about.your-team' class='col text-left'}}<i class="fas fa-caret-circle-up"></i> Meet Your Team{{/link-to}}
+        <LinkTo @route="about.your-team" class="col text-left"><i class="fas fa-caret-circle-up"></i> Meet Your Team</LinkTo>
       </div>
     </div>
   </div>
@@ -20,9 +20,9 @@
               <div class='team-list d-none d-sm-block'>
                 {{#each (sort-by "lastName" team) as |profile|}}
                   <div class="member">
-                    {{#link-to "about.member" profile.dashedTitle class="full-name"}}
+                    <LinkTo @route="about.member" @model={{profile.dashedTitle}} class="full-name">
                       {{profile.firstName}} {{#if profile.middleInitial}} {{profile.middleInitial}}{{/if}} {{profile.lastName}}
-                    {{/link-to}}
+                    </LinkTo>
                   </div>
                 {{/each}}
               </div>

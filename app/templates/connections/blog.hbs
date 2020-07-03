@@ -2,13 +2,13 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'connections.in-the-news' class='col text-right'}}Prio In the News&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
+        <LinkTo @route="connections.in-the-news" class="col text-right">Prio In the News&nbsp;<i class="fas fa-caret-circle-down"></i></LinkTo>
       </div>
     </div>
   </div>
   {{#each page.section as |section|}}
-    {{page-section section=section}}
+    <PageSection @section={{section}} />
   {{/each}}
-  {{blog-listing blogs=blogs}}
+  <BlogListing @blogs={{blogs}} />
   {{liquid-outlet enableGrowth=false}}
 </div>

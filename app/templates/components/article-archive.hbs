@@ -19,7 +19,7 @@
                 {{#if article.useDownload}}
                   <a href="{{article.file.url}}" target="_blank" class="more">{{article.downloadLinkText}}</a>
                 {{else}}
-                  {{#link-to "connections.post" article.id class="more"}}More{{/link-to}}
+                  <LinkTo @route="connections.post" @model={{article.id}} class="more">More</LinkTo>
                 {{/if}}
               </div>
             </div>

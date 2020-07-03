@@ -2,14 +2,14 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'about.how-different' class='col text-left'}}<i class="fas fa-caret-circle-up"></i>&nbsp;How We're Different{{/link-to}}
-        {{#link-to 'about.jobs' class='col text-right'}}Jobs&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
+        <LinkTo @route="about.how-different" class="col text-left"><i class="fas fa-caret-circle-up"></i>&nbsp;How We're Different</LinkTo>
+        <LinkTo @route="about.jobs" class="col text-right">Jobs&nbsp;<i class="fas fa-caret-circle-down"></i></LinkTo>
       </div>
     </div>
   </div>
   {{#each page.section as |section|}}
-    {{page-section section=section}}
+    <PageSection @section={{section}} />
   {{/each}}
-  {{team-listing team=team}}
+  <TeamListing @team={{team}} />
   {{liquid-outlet enableGrowth=false}}
 </div>

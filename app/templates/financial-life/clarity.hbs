@@ -1,9 +1,9 @@
 <div class="overlay-container">
   {{#each page.section as |section|}}
-    {{page-section section=section selectSnapshot=(action 'selectSnapshot')}}
+    <PageSection @section={{section}} @selectSnapshot={{action "selectSnapshot"}} />
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
 {{#with (filter-by "displayOn" "clarity" snapshots) as |snaps|}}
-  {{snap-display snap=selectedSnapshot snaps=snaps}}
+  <SnapDisplay @snap={{selectedSnapshot}} @snaps={{snaps}} />
 {{/with}}

@@ -20,8 +20,8 @@
 /yarn-error.log
 
 # ember-try
-.node_modules.ember-try/
-bower.json.ember-try
-package.json.ember-try
 .DS_Store
 /.idea/workspace.xml
+/.node_modules.ember-try/
+/bower.json.ember-try
+/package.json.ember-try

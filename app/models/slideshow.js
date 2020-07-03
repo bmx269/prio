@@ -1,9 +1,9 @@
-import DS from 'ember-data';
+import Model, { attr, hasMany, belongsTo } from '@ember-data/model';
 
-export default DS.Model.extend({
-  created: DS.attr('string'),
-  style: DS.attr('string'),
-  count: DS.attr('number'),
-  slide: DS.hasMany('slide', { async: true }),
-  element: DS.belongsTo('element', { async: true })
+export default Model.extend({
+  created: attr('string'),
+  style: attr('string'),
+  count: attr('number'),
+  slide: hasMany('slide', { async: true }),
+  element: belongsTo('element', { async: true })
 });

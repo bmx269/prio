@@ -2,14 +2,14 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'connections.blog' class='col text-left'}}<i class="fas fa-caret-circle-up"></i>&nbsp;Prio Blog{{/link-to}}
-        {{#link-to 'connections.investment-updates' class='col text-right'}}Prio Investment Outlook&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
+        <LinkTo @route="connections.blog" class="col text-left"><i class="fas fa-caret-circle-up"></i>&nbsp;Prio Blog</LinkTo>
+        <LinkTo @route="connections.investment-updates" class="col text-right">Prio Investment Outlook&nbsp;<i class="fas fa-caret-circle-down"></i></LinkTo>
       </div>
     </div>
   </div>
   {{#each page.section as |section|}}
-    {{page-section section=section}}
+    <PageSection @section={{section}} />
   {{/each}}
-  {{news-listing articles=articles}}
+  <NewsListing @articles={{articles}} />
   {{liquid-outlet enableGrowth=false}}
 </div>

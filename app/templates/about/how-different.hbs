@@ -2,16 +2,16 @@
   <div class="bread-nav">
     <div class="container-fluid">
       <div class='row'>
-        {{#link-to 'about.your-priority' class='col text-left'}}<i class="fas fa-caret-circle-up"></i>&nbsp;What's Your Priority{{/link-to}}
-        {{#link-to 'about.your-team' class='col text-right'}}Meet Your Team&nbsp;<i class="fas fa-caret-circle-down"></i>{{/link-to}}
+        <LinkTo @route="about.your-priority" class="col text-left"><i class="fas fa-caret-circle-up"></i>&nbsp;What's Your Priority</LinkTo>
+        <LinkTo @route="about.your-team" class="col text-right">Meet Your Team&nbsp;<i class="fas fa-caret-circle-down"></i></LinkTo>
       </div>
     </div>
   </div>
   {{#each page.section as |section|}}
-    {{page-section section=section selectSnapshot=(action 'selectSnapshot')}}
+    <PageSection @section={{section}} @selectSnapshot={{action "selectSnapshot"}} />
   {{/each}}
   {{liquid-outlet enableGrowth=false}}
 </div>
 {{#with (filter-by "displayOn" "how-different" snapshots) as |snaps|}}
-  {{snap-display snap=selectedSnapshot snaps=snaps}}
+  <SnapDisplay @snap={{selectedSnapshot}} @snaps={{snaps}} />
 {{/with}}

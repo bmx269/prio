@@ -26,7 +26,7 @@
                   {{#if article.articleUrl}}
                     <a href="{{article.articleUrl}}" target="_blank" class="more">Visit Site</a>
                   {{else}}
-                    {{#link-to "connections.post" article.id class="more"}}Read More{{/link-to}}
+                    <LinkTo @route="connections.post" @model={{article.id}} class="more">Read More</LinkTo>
                   {{/if}}
                 {{/if}}
               </div>

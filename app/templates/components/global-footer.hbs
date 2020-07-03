@@ -3,10 +3,10 @@
     <div class='row'>
 
       <div class='copyright col-12 text-center'>
-        © 2020 Prio Wealth &nbsp;&nbsp;&nbsp;&nbsp;{{#link-to 'disclosure'}}Important Disclosures{{/link-to}}&nbsp; |&nbsp;&nbsp;<a href="https://priowealth.com/Prio-2020-Privacy-Notice-AnnualDisclosure.pdf" target="_blank">Privacy Policy</a>&nbsp; |&nbsp;&nbsp;Brand&nbsp;by&nbsp;<a href="http://www.creativemint.com" target="_blank">Creative:MINT</a>
+        © 2020 Prio Wealth &nbsp;&nbsp;&nbsp;&nbsp;<LinkTo @route="disclosure">Important Disclosures</LinkTo>&nbsp; |&nbsp;&nbsp;<a href="https://priowealth.com/Prio-2020-Privacy-Notice-AnnualDisclosure.pdf" target="_blank">Privacy Policy</a>&nbsp; |&nbsp;&nbsp;Brand&nbsp;by&nbsp;<a href="http://www.creativemint.com" target="_blank">Creative:MINT</a>
       </div>
       <div class='social col-12 d-none'>
-        {{#link-to 'index'}}<i class="fab fa-twitter-square"></i>{{/link-to}}&nbsp;&nbsp;{{#link-to 'index'}}<i class="fab fa-facebook-square"></i>{{/link-to}}&nbsp;&nbsp;{{#link-to 'index'}}<i class="fab fa-linkedin"></i>{{/link-to}}
+        <LinkTo @route="index"><i class="fab fa-twitter-square"></i></LinkTo>&nbsp;&nbsp;<LinkTo @route="index"><i class="fab fa-facebook-square"></i></LinkTo>&nbsp;&nbsp;<LinkTo @route="index"><i class="fab fa-linkedin"></i></LinkTo>
 
       </div>
     </div>

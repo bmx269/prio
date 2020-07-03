@@ -3,39 +3,44 @@ import RouterScroll from 'ember-router-scroll';
 import config from './config/environment';
 import { inject } from '@ember/service';
 import { scheduleOnce } from '@ember/runloop';
-import { setupRouter, reset } from 'ember-app-scheduler';
+// import { setupRouter, reset } from 'ember-app-scheduler';
 
-const Router = EmberRouter.extend(RouterScroll, {
-  location: config.locationType,
-  headData: inject(),
-  rootURL: config.rootURL,
-  metrics: inject(),
+// const Router = EmberRouter.extend(RouterScroll, {
+//   location: config.locationType,
+//   headData: inject(),
+//   rootURL: config.rootURL,
+//   metrics: inject(),
 
-  init() {
-    this._super(...arguments);
+//   init() {
+//     this._super(...arguments);
 
-    setupRouter(this);
-  },
+//     setupRouter(this);
+//   },
 
 
-  // setTitle(title) {
-  //   this.get('headData').set('title', title);
-  // },
+//   // setTitle(title) {
+//   //   this.get('headData').set('title', title);
+//   // },
 
-  didTransition() {
-    this._super(...arguments);
-    this._trackPage();
-  },
+//   didTransition() {
+//     this._super(...arguments);
+//     this._trackPage();
+//   },
 
-  _trackPage() {
-    scheduleOnce('afterRender', this, () => {
-      const page = this.url;
-      const title = this.getWithDefault('currentRouteName', 'unknown');
+//   _trackPage() {
+//     scheduleOnce('afterRender', this, () => {
+//       const page = this.url;
+//       const title = this.getWithDefault('currentRouteName', 'unknown');
 
-      this.metrics.trackPage({ page, title });
-    });
-  }
-});
+//       this.metrics.trackPage({ page, title });
+//     });
+//   }
+// });
+
+export default class Router extends EmberRouter {
+  location = config.locationType;
+  rootURL = config.rootURL;
+}
 
 Router.map(function() {
   this.route('index', { path: '/' });
@@ -75,5 +80,3 @@ Router.map(function() {
   this.route('notfound', { path: '/*path' });
 
 });
-
-export default Router;
