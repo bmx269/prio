@@ -4,6 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    'sassOptions': {
+      // This tells ember-cli-sass to avoid generating the sourcemap file (like vendor.css.map)
+      sourceMap: false
+    },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
