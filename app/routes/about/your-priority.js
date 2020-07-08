@@ -5,7 +5,7 @@ export default Route.extend({
 
   model() {
     return RSVP.hash({
-      page: this.store.findRecord('page', '9d2e0600-35d8-4b8f-8b8d-e2e52d08c547'),
+      page: this.store.findRecord('page', 'ca7440a7-22b8-47bd-a503-2053c7d381f7'),
     });
   },
 

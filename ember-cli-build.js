@@ -4,47 +4,39 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    'autoprefixer': {
-      browsers: [
-        'ie 11',
-        'last 2 edge versions',
-        'last 2 Chrome versions',
-        'last 2 Firefox versions',
-        'last 2 Safari versions'
-      ],
-      cascade: false
+    'sassOptions': {
+      // This tells ember-cli-sass to avoid generating the sourcemap file (like vendor.css.map)
+      sourceMap: false
     },
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
       'importBootstrapCSS': false
-    },
-    'ember-cli-babel': {
-      includePolyfill: true
-    },
-    'prember': {
-      baseRoot: 'https://priowealth.com',
-      urls: [
-        '/',
-        '/about',
-        '/about/our-story',
-        '/about/how-different',
-        '/about/your-team',
-        '/financial-life',
-        '/financial-life/clarity',
-        '/investment',
-        '/investment/management',
-        '/connections',
-        '/connections/blog',
-        '/connections/in-the-news',
-        '/connections/investment-updates',
-        '/priority',
-        '/priority/video',
-        '/contact',
-        '/contact/form',
-        '/disclosure'
-      ]
-    }
+    } //,
+
+    // 'prember': {
+    //   baseRoot: 'https://priowealth.com',
+    //   urls: [
+    //     '/',
+    //     '/about',
+    //     '/about/our-story',
+    //     '/about/how-different',
+    //     '/about/your-team',
+    //     '/financial-life',
+    //     '/financial-life/clarity',
+    //     '/investment',
+    //     '/investment/management',
+    //     '/connections',
+    //     '/connections/blog',
+    //     '/connections/in-the-news',
+    //     '/connections/investment-updates',
+    //     '/priority',
+    //     '/priority/video',
+    //     '/contact',
+    //     '/contact/form',
+    //     '/disclosure'
+    //   ]
+    // }
   });
 
   // Use `app.import` to add additional libraries to the generated
