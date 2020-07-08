@@ -5608,7 +5608,7 @@ ember-source@~3.1.0:
     jquery "^3.3.1"
     resolve "^1.5.0"
 
-ember-sticky-element@^0.2.0:
+ember-sticky-element@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/ember-sticky-element/-/ember-sticky-element-0.2.3.tgz#39702e0fc0f04905a7b34add61a85a9186d3d16b"
   integrity sha512-AtKkM8zh6LK5FsPxtsDywUSodGk5c2AI03vcgk995dC5Z7DG4XLJoAwV0FZM5RYnymnYEJvOs6VTcIM8uwcX5w==
@@ -5865,7 +5865,7 @@ escodegen@^1.11.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-ember@^5.0.0:
+eslint-plugin-ember@^5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-5.4.0.tgz#2980a4389119b37d0450fff8e82d59c9aab126d0"
   integrity sha512-tYMuxUrTad4f7Dq9gY9GUs9lXwKY+fZklzCJ0JoYbzK2PwSfdrPInr2Y4tHornc9dzPvNbRxsn5b26PrWp2iZg==
