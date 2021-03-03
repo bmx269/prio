@@ -24,7 +24,7 @@
     "ember-app-scheduler": "^1.0.4",
     "ember-bootstrap": "^1.2.2",
     "ember-burger-menu": "^3.1.0",
-    "ember-cli": "~3.1.4",
+    "ember-cli": "~3.25.1",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-autoprefixer": "^0.8.1",
     "ember-cli-babel": "^6.18.0",
